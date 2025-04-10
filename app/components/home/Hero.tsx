@@ -9,12 +9,12 @@ import { motion } from "motion/react";
 export default function Hero() {
   return (
     <motion.div
-      className="h-screen"
+      className="min-h-screen"
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
     >
-      <div className="w-full bg-backgroundsecondary h-[90vh] pt-6 rounded-4xl flex flex-row justify-between">
+      <div className="w-full bg-backgroundsecondary h-[90vh] pt-6 rounded-4xl flex flex-row justify-between shadow-md hover:shadow-lg transition">
         <div className="mt-16 p-6 lg:w-1/2 w-full gap-4 flex flex-col items-start justify-start">
           <h1 className={`font-bold ${Gliker.className} text-5xl text-primary`}>
             Manuart Festival
@@ -56,7 +56,7 @@ export default function Hero() {
             </button>
           </form>
         </div>
-        <div className="hidden lg:block w-1/2 relative">
+        <div className="hidden lg:block w-1/2 relative ">
           <Image src="/heroguy.png" fill={true} alt="guy" objectFit="contain" />
         </div>
       </div>

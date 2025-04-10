@@ -8,7 +8,7 @@ export default function About() {
   return (
     <AnimatePresence>
       <motion.section
-        className="h-screen  flex flex-col sm:flex-row items-center justify-start py-16"
+        className="min-h-screen  flex flex-col sm:flex-row items-center justify-start py-16"
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
@@ -21,7 +21,7 @@ export default function About() {
             Kazdy przedmiot to opowiesc
           </h2>
           <div className="flex flex-col items-center justify-center w-full sm:w-5/6  gap-4">
-            <p className="bg-backgroundsecondary text-lg  p-4 rounded-xl font-bold text-primarydark ">
+            <p className="bg-backgroundsecondary text-lg  p-4 rounded-xl font-bold text-primarydark shadow-md hover:shadow-lg transition">
               14 czerwca w Galerii Szyb Wilson w Katowicach odbędzie się
               festiwal rękodzieła, który łączy pasję do unikalnych wyrobów z
               edukacją i networkingiem. To idealna okazja, aby odkryć talenty
@@ -31,8 +31,13 @@ export default function About() {
             <Button text="Wydarzenie na FB" href="https://www.google.com" />
           </div>
         </div>
-        <div className="hidden sm:block w-1/3 h-2/3 relative rounded-4xl ">
-          <Image src="/rider.jpg" alt="" fill className="rounded-4xl" />
+        <div className="hidden sm:block w-1/3 aspect-[3/4] relative rounded-4xl shadow-md hover:shadow-lg transition">
+          <Image
+            src="/rider.jpg"
+            alt="rider"
+            fill
+            className="object-cover rounded-4xl"
+          />
         </div>
       </motion.section>
     </AnimatePresence>

@@ -2,6 +2,8 @@
 import { useRef, useEffect } from "react";
 import Hero from "./components/home/Hero";
 import About from "./components/home/About";
+import Organisators from "./components/home/Organisators";
+import PartnersCarousel from "./components/home/PartnersCarousel";
 
 export default function Home() {
   const heroRef = useRef<HTMLDivElement | null>(null);
@@ -39,6 +41,12 @@ export default function Home() {
       </div>
       <div ref={aboutRef}>
         <About />
+      </div>
+      <div>
+        <Organisators />
+      </div>
+      <div>
+        <PartnersCarousel />
       </div>
     </div>
   );

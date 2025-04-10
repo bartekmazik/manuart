@@ -58,16 +58,36 @@ const Navbar = () => {
     <div
       className={`${isHome(
         route
-      )} border w-full flex flex-row items-center justify-between sm:justify-start sm:gap-10`}
+      )} border w-screen flex flex-row items-center justify-between sm:justify-start sm:gap-10`}
     >
       <Link href="/" className="relative w-20 h-20">
         <Image src="/logo.png" alt="logo" fill />
       </Link>
-      <div className="hidden sm:flex flex-row items-center gap-8 justify-between font-bold hover:text-primarydark text-xl text-primary">
-        <Link href={"/About"}>Wydarzenie</Link>
-        <Link href={"/About"}>O nas</Link>
-        <Link href={"/About"}>Partnerzy</Link>
-        <Link href={"/About"}>Kontakt</Link>
+      <div className="hidden sm:flex flex-row items-center gap-8 justify-between font-bold  text-xl text-primary">
+        <Link
+          href={"/wydarzenie"}
+          className="hover:text-primarydark transition-colors duration-500"
+        >
+          Wydarzenie
+        </Link>
+        <Link
+          href={"/About"}
+          className="hover:text-primarydark transition-colors duration-500"
+        >
+          O nas
+        </Link>
+        <Link
+          href={"/About"}
+          className="hover:text-primarydark transition-colors duration-500"
+        >
+          Partnerzy
+        </Link>
+        <Link
+          href={"/About"}
+          className="hover:text-primarydark transition-colors duration-500"
+        >
+          Kontakt
+        </Link>
       </div>
       <button
         className="sm:hidden p-4 self-start "
