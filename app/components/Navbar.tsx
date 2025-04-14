@@ -8,9 +8,9 @@ import { AnimatePresence, motion } from "framer-motion";
 
 function isHome(path: string) {
   if (path === "/") {
-    return "absolute top-0 left-0 z-50 pt-6 px-10";
+    return "absolute top-0 left-0 z-50 pt-6";
   } else {
-    return "";
+    return "pt-2";
   }
 }
 
@@ -58,7 +58,7 @@ const Navbar = () => {
     <div
       className={`${isHome(
         route
-      )} border w-screen flex flex-row items-center justify-between sm:justify-start sm:gap-10`}
+      )}  px-10  w-screen flex flex-row items-center justify-between sm:justify-start sm:gap-10`}
     >
       <Link href="/" className="relative w-20 h-20">
         <Image src="/logo.png" alt="logo" fill />

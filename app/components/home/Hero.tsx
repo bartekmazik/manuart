@@ -39,7 +39,7 @@ export default function Hero() {
               Galeria Szyb Wilson, Katowice
             </p>
           </div>
-          <Button text="MAPA WYDARZENIA" href="/Wydarzenie" />
+          <Button text="MAPA WYDARZENIA" href="/wydarzenie" />
           <h2
             className={`text-3xl ${Gliker.className} text-secondary
         }`}

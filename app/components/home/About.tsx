@@ -28,7 +28,10 @@ export default function About() {
               lokalnych twórców, poznać ich historię i zobaczyć, jak powstają
               wyjątkowe produkty.
             </p>
-            <Button text="Wydarzenie na FB" href="https://www.google.com" />
+            <Button
+              text="Wydarzenie na FB"
+              href="https://www.facebook.com/Paneuropa"
+            />
           </div>
         </div>
         <div className="hidden sm:block w-1/3 aspect-[3/4] relative rounded-4xl shadow-md hover:shadow-lg transition">
