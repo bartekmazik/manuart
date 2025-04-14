@@ -36,16 +36,16 @@ function Dropdown({ onClose }: { onClose: () => void }) {
       >
         x
       </button>
-      <Link href="/About" onClick={onClose}>
+      <Link href="/wydarzenie" onClick={onClose}>
         Wydarzenie
       </Link>
-      <Link href="/About" onClick={onClose}>
+      <Link href="/paneuropa" onClick={onClose}>
         O nas
       </Link>
-      <Link href="/About" onClick={onClose}>
+      <Link href="/partnerzy" onClick={onClose}>
         Partnerzy
       </Link>
-      <Link href="/About" onClick={onClose}>
+      <Link href="/kontakt" onClick={onClose}>
         Kontakt
       </Link>
     </motion.div>
@@ -71,19 +71,19 @@ const Navbar = () => {
           Wydarzenie
         </Link>
         <Link
-          href={"/About"}
+          href={"/paneuropa"}
           className="hover:text-primarydark transition-colors duration-500"
         >
           O nas
         </Link>
         <Link
-          href={"/About"}
+          href={"/partnerzy"}
           className="hover:text-primarydark transition-colors duration-500"
         >
           Partnerzy
         </Link>
         <Link
-          href={"/About"}
+          href={"/kontakt"}
           className="hover:text-primarydark transition-colors duration-500"
         >
           Kontakt
