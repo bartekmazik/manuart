@@ -5,7 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { Menu } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
-
+{
+  /*make navbar absolute if route is home*/
+}
 function isHome(path: string) {
   if (path === "/") {
     return "absolute top-0 left-0 z-50 pt-6";
@@ -53,7 +55,7 @@ function Dropdown({ onClose }: { onClose: () => void }) {
 }
 const Navbar = () => {
   const route = usePathname();
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false); //dropdown control
   return (
     <div
       className={`${isHome(
@@ -95,6 +97,7 @@ const Navbar = () => {
       >
         <Menu />
       </button>
+      {/*dropdown animation wrapper*/}
       <AnimatePresence>
         {isOpen && <Dropdown onClose={() => setIsOpen(false)} />}
       </AnimatePresence>

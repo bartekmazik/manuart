@@ -11,8 +11,8 @@ const sponsors = [
   "/logo.png",
   "/logo.png",
 ];
-
-const duplicatedSponsors = [...sponsors, ...sponsors, ...sponsors]; // extend loop
+//needs to be above 3 items in array otherways its not filling enough space
+const duplicatedSponsors = [...sponsors, ...sponsors, ...sponsors];
 
 const PartnersCarousel = () => {
   return (

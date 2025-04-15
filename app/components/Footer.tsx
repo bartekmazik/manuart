@@ -19,7 +19,7 @@ const Footer = () => {
         {/* footer content */}
         <div className="absolute bg-transparent inset-0 px-8 sm:px-16 py-12 sm:py-20 flex flex-col sm:flex-row items-end justify-end sm:justify-between  text-center sm:text-left gap-10 sm:gap-0">
           {/*left column*/}
-          <div className="flex flex-col items-center sm:items-start gap-4">
+          <div className="flex flex-col items-center sm:items-start gap-4 w-full">
             <h2
               className={`${Gliker.className} text-primary text-4xl font-bold`}
             >
@@ -53,7 +53,7 @@ const Footer = () => {
             </div>
           </div>
           {/* right column */}
-          <div className="flex flex-col justify-center items-center gap-4">
+          <div className="w-full flex flex-col justify-center items-center sm:w-1/3 gap-4">
             <p className={`${Gliker.className} text-primary text-2xl`}>
               ZAOBSERWUJ NAS
             </p>
@@ -80,12 +80,7 @@ const Footer = () => {
                   alt: "TikTok",
                 },
               ].map(({ href, src, alt }) => (
-                <Link
-                  key={alt}
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <Link key={alt} href={href} target="_blank">
                   <Image
                     src={src}
                     alt={alt}

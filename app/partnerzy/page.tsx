@@ -7,6 +7,7 @@ const PartnersPage = () => {
       <h1 className={`${Gliker.className} text-5xl text-primary`}>
         Partnerzy wydarzenia
       </h1>
+      {/*partners*/}
     </div>
   );
 };
