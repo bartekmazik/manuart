@@ -17,11 +17,11 @@ const Footer = () => {
         />
 
         {/* footer content */}
-        <div className="absolute bg-transparent inset-0 px-8 sm:px-16 py-12 sm:py-20 flex flex-col sm:flex-row items-end justify-end sm:justify-between  text-center sm:text-left gap-10 sm:gap-0">
+        <div className="absolute bg-transparent inset-0 px-8 sm:px-16 py-8 sm:py-20 flex flex-col sm:flex-row items-end justify-end sm:justify-between  text-center sm:text-left gap-10 sm:gap-0">
           {/*left column*/}
           <div className="flex flex-col items-center sm:items-start gap-4 w-full">
             <h2
-              className={`${Gliker.className} text-primary text-4xl font-bold`}
+              className={`${Gliker.className} text-primary text-3xl sm:text-4xl font-bold`}
             >
               Manuart Festival
             </h2>

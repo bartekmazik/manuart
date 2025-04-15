@@ -5,9 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { Menu } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
-{
-  /*make navbar absolute if route is home*/
-}
+
+/*make navbar absolute if route is home*/
+
 function isHome(path: string) {
   if (path === "/") {
     return "absolute top-0 left-0 z-50 pt-6";
@@ -55,53 +55,57 @@ function Dropdown({ onClose }: { onClose: () => void }) {
 }
 const Navbar = () => {
   const route = usePathname();
+
   const [isOpen, setIsOpen] = useState(false); //dropdown control
+
   return (
-    <div
-      className={`${isHome(
-        route
-      )}  px-10  w-screen flex flex-row items-center justify-between sm:justify-start sm:gap-10`}
-    >
-      <Link href="/" className="relative w-20 h-20">
-        <Image src="/logo.png" alt="logo" fill />
-      </Link>
-      <div className="hidden sm:flex flex-row items-center gap-8 justify-between font-bold  text-xl text-primary">
-        <Link
-          href={"/wydarzenie"}
-          className="hover:text-primarydark transition-colors duration-500"
-        >
-          Wydarzenie
-        </Link>
-        <Link
-          href={"/paneuropa"}
-          className="hover:text-primarydark transition-colors duration-500"
-        >
-          O nas
-        </Link>
-        <Link
-          href={"/partnerzy"}
-          className="hover:text-primarydark transition-colors duration-500"
-        >
-          Partnerzy
-        </Link>
-        <Link
-          href={"/kontakt"}
-          className="hover:text-primarydark transition-colors duration-500"
-        >
-          Kontakt
-        </Link>
-      </div>
-      <button
-        className="sm:hidden p-4 self-start "
-        onClick={() => setIsOpen(!isOpen)}
+    <>
+      <div
+        className={`${isHome(
+          route
+        )}  px-10  w-screen flex flex-row items-center justify-between sm:justify-start sm:gap-10`}
       >
-        <Menu />
-      </button>
-      {/*dropdown animation wrapper*/}
-      <AnimatePresence>
-        {isOpen && <Dropdown onClose={() => setIsOpen(false)} />}
-      </AnimatePresence>
-    </div>
+        <Link href="/" className="relative w-20 h-20">
+          <Image src="/logo.png" alt="logo" fill />
+        </Link>
+        <div className="hidden sm:flex flex-row items-center gap-8 justify-between font-bold  text-xl text-primary">
+          <Link
+            href={"/wydarzenie"}
+            className="hover:text-primarydark transition-colors duration-500"
+          >
+            Wydarzenie
+          </Link>
+          <Link
+            href={"/paneuropa"}
+            className="hover:text-primarydark transition-colors duration-500"
+          >
+            O nas
+          </Link>
+          <Link
+            href={"/partnerzy"}
+            className="hover:text-primarydark transition-colors duration-500"
+          >
+            Partnerzy
+          </Link>
+          <Link
+            href={"/kontakt"}
+            className="hover:text-primarydark transition-colors duration-500"
+          >
+            Kontakt
+          </Link>
+        </div>
+        <button
+          className="sm:hidden p-4 self-start "
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <Menu />
+        </button>
+        {/*dropdown animation wrapper*/}
+        <AnimatePresence>
+          {isOpen && <Dropdown onClose={() => setIsOpen(false)} />}
+        </AnimatePresence>
+      </div>
+    </>
   );
 };
 

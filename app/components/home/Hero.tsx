@@ -5,8 +5,46 @@ import { Gliker } from "../../fonts/gliker";
 import { CalendarDays, Clock, MapPin } from "lucide-react";
 import { Button } from "../Button";
 import { motion } from "motion/react";
+import * as z from "zod";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+
+const newsletterSchema = z.object({
+  email: z.string().email("Niepoprawny adres email"),
+});
+type NewsletterBody = z.infer<typeof newsletterSchema>;
 
 export default function Hero() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitting },
+    reset,
+  } = useForm<NewsletterBody>({
+    resolver: zodResolver(newsletterSchema),
+    defaultValues: {
+      email: "",
+    },
+  });
+
+  const onSubmit = async (data: NewsletterBody) => {
+    try {
+      const response = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to join newsletter");
+      }
+      reset();
+    } catch (error) {
+      console.error("Error joining to newsletter:", error);
+    }
+  };
   return (
     <motion.div
       className="min-h-screen"
@@ -46,13 +84,26 @@ export default function Hero() {
           >
             Bądź na bieząco
           </h2>
-          <form className="hidden lg:flex flex-row gap-2 items-center justify-center  ">
+          <form
+            onSubmit={handleSubmit(onSubmit)}
+            className="hidden lg:flex flex-row gap-2 items-center justify-center  "
+          >
             <input
               placeholder="Email"
               className="bg-white rounded-3xl py-3 px-6 text-black focus:outline-primary"
+              {...register("email")}
             />
-            <button className="bg-primary rounded-3xl py-3 px-6 text-white cursor-pointer hover:bg-primarydark transition-colors duration-300 font-extrabold">
-              ZAPISZ SIĘ DO NEWSLETTERA
+            {errors.email && (
+              <p className="text-red-500 text-sm mt-1 ml-2">
+                {errors.email.message}
+              </p>
+            )}
+            <button
+              disabled={isSubmitting}
+              type="submit"
+              className="bg-primary rounded-3xl py-3 px-6 text-white cursor-pointer hover:bg-primarydark transition-colors duration-300 font-extrabold"
+            >
+              {isSubmitting ? "WYSYŁANIE" : "ZAPISZ SIĘ DO NEWSLETTERA"}
             </button>
           </form>
         </div>

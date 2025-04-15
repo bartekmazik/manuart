@@ -16,7 +16,7 @@ const duplicatedSponsors = [...sponsors, ...sponsors, ...sponsors];
 
 const PartnersCarousel = () => {
   return (
-    <div className="relative h-screen w-full flex flex-col justify-center items-start overflow-hidden bg-background py-8">
+    <div className="relative h-screen w-full flex flex-col justify-center items-start overflow-hidden  py-8">
       <h1
         className={`${Gliker.className} font-bold text-5xl self-center text-primary mb-8`}
       >

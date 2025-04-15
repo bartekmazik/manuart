@@ -6,17 +6,18 @@ import PartnersCarousel from "./components/home/PartnersCarousel";
 
 export default function Home() {
   return (
-    <div className="h-screen overflow-y-scroll snap-y snap-mandatory no-scrollbar">
-      <div className="snap-start">
+    <div>
+      {/*snap-y snap-mandatory no-scrollbar*/}
+      <div>
         <Hero />
       </div>
-      <div className="snap-start">
+      <div>
         <About />
       </div>
-      <div className="snap-start">
+      <div>
         <Organisators />
       </div>
-      <div className="snap-start">
+      <div>
         <PartnersCarousel />
       </div>
     </div>
