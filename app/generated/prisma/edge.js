@@ -154,17 +154,18 @@ const config = {
     "db"
   ],
   "activeProvider": "postgresql",
+  "postinstall": false,
   "inlineDatasources": {
     "db": {
       "url": {
         "fromEnvVar": "DATABASE_URL",
-        "value": "prisma+postgres://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiOWNlMzEzMjAtMDBhNi00NzZiLTgwNjgtMTBiNWU3YWJlNjI3IiwidGVuYW50X2lkIjoiZjhmYWQwYTg2MGFhNDY5N2I4N2IyOTY2NDc2ODgwNjE5NWIyMDEzYzM1MDY0MjhiN2YxZmQzNzQxOTAxODZlOSIsImludGVybmFsX3NlY3JldCI6ImZjNmU0MzMxLTBiNWYtNGE4Yy1hZWNiLTZlYjQxYjIwMThhOSJ9.6HwgdFv9fdb6ad3wLeXNb32i2MgDnt6NEXmk3Jk3nEI"
+        "value": null
       }
     }
   },
   "inlineSchema": "// This is your Prisma schema file,\n// learn more about it in the docs: https://pris.ly/d/prisma-schema\n\n// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?\n// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init\n\ngenerator client {\n  provider = \"prisma-client-js\"\n  output   = \"../app/generated/prisma\"\n}\n\ndatasource db {\n  provider = \"postgresql\"\n  url      = env(\"DATABASE_URL\")\n}\n\nmodel Message {\n  id      Int    @id @default(autoincrement())\n  email   String\n  message String\n}\n\nmodel Newsletter {\n  id    Int    @id @default(autoincrement())\n  email String\n}\n",
   "inlineSchemaHash": "be9ebf7ca14d1d5eec70f13b21e977e3d99ada355fd9301185ee9c3ac8070f8d",
-  "copyEngine": false
+  "copyEngine": true
 }
 config.dirname = '/'
 
