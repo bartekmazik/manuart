@@ -33,7 +33,7 @@ export default function About() {
               powstają wyjątkowe produkty.
             </p>
             <Button
-              text="Wydarzenie na Facebooku"
+              text="WYDARZENIE NA FACEBOOKU"
               href="https://www.facebook.com/Paneuropa"
             />
           </div>

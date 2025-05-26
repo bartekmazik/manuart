@@ -27,9 +27,9 @@ const Zone = () => {
 
 const Zones = () => {
   return (
-    <div className="h-screen py-16">
+    <div className="min-h-screen py-16">
       <h1
-        className={`${Gliker.className} font-bold text-5xl  text-primary mb-8`}
+        className={`${Gliker.className} font-bold text-3xl sm:text-5xl  text-primary mb-8`}
       >
         STREFY WYDARZENIA
       </h1>

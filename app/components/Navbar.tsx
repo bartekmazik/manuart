@@ -15,9 +15,9 @@ export const NavbarProvider = () => {
 
 function isHome(path: string) {
   if (path === "/") {
-    return "absolute top-0 left-0   pt-2";
+    return "absolute top-0 left-0 w-full  pt-2";
   } else {
-    return "pt-2";
+    return "pt-2 w-screen";
   }
 }
 
@@ -77,9 +77,9 @@ const Navbar = () => {
       <div
         className={`${isHome(
           route
-        )}  px-10   w-screen flex flex-row items-center justify-between sm:justify-start sm:gap-10`}
+        )}  px-4 sm:px-10  flex flex-row items-center justify-between sm:justify-start sm:gap-10`}
       >
-        <Link href="/" className="relative w-32 h-32">
+        <Link href="/" className="relative w-24 h-24 sm:w-32 sm:h-32">
           <Image src="/logo.png" alt="logo" fill />
         </Link>
         <div className="hidden sm:flex flex-row items-center gap-8 justify-between font-bold  text-xl text-primary">
@@ -128,7 +128,7 @@ const Navbar = () => {
           </Link>
         </div>
         <button
-          className="sm:hidden p-4 self-start "
+          className="sm:hidden p-4 sm:self-start "
           onClick={() => setIsOpen(!isOpen)}
         >
           <Menu />

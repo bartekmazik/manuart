@@ -12,11 +12,11 @@ export const FooterProvider = () => {
 
 const Footer = () => {
   return (
-    <footer className="relative w-full h-[40vh] rounded-t-4xl overflow-x-visible sm:mt-36 text-backgroundsecondary bg-backgroundsecondary ">
+    <footer className="relative w-full h-[50vh] sm:h-[40vh] rounded-t-4xl overflow-x-visible sm:mt-36 text-backgroundsecondary bg-backgroundsecondary ">
       {/* footer content */}
-      <div className="absolute bg-transparent inset-0 px-8 sm:px-16 py-8 sm:py-20 flex flex-col sm:flex-row items-end justify-end sm:justify-between  text-center sm:text-left gap-10 sm:gap-0">
+      <div className="absolute bg-transparent inset-0 px-8 sm:px-16 py-8 sm:py-20 flex flex-col sm:flex-row items-end justify-end sm:justify-between  text-left gap-10 sm:gap-0">
         {/*left column*/}
-        <div className="flex flex-col items-center sm:items-start gap-4 w-full">
+        <div className="flex flex-col items-start gap-4 w-full">
           <h2
             className={`${Gliker.className} text-primary text-3xl sm:text-4xl font-bold`}
           >
@@ -50,7 +50,7 @@ const Footer = () => {
           </div>
         </div>
         {/* right column */}
-        <div className="w-full flex flex-col justify-center items-center sm:w-1/3 gap-4">
+        <div className="w-full flex flex-col justify-center items-start sm:items-center sm:w-1/3 gap-4">
           <p className={`${Gliker.className} text-primary text-2xl`}>
             ZAOBSERWUJ NAS
           </p>

@@ -55,46 +55,50 @@ export default function Hero() {
     >
       <div className="relative w-full bg-backgroundsecondary h-[90%] rounded-4xl flex flex-row justify-between shadow-md hover:shadow-lg transition">
         <Navbar />
-        <div className="mt-24 p-6 lg:w-1/2 w-full gap-4 flex flex-col items-start justify-start">
-          <h1 className={`font-bold ${Gliker.className} text-5xl text-primary`}>
+        <div className="mt-28 p-6 lg:w-1/2 w-full gap-4 flex flex-col items-start justify-start">
+          <h1
+            className={`font-bold ${Gliker.className} text-4xl sm:text-5xl text-primary`}
+          >
             ManuArt Festiwal
           </h1>
           <h2
-            className={`font-bold ${Gliker.className} text-3xl text-secondary`}
+            className={`font-bold ${Gliker.className} text-2xl sm:text-3xl text-secondary`}
           >
             {" "}
             Twórz i Inspiruj
           </h2>
           <div className="w-full flex justify-start items-center gap-2 ">
             <CalendarDays className="text-primarydark w-6 h-6" />
-            <p className="font-bold text-primarydark text-xl">
+            <p className="font-bold text-primarydark  text-base sm:text-xl">
               14 czerwca 2025
             </p>
           </div>
           <div className="w-full flex justify-start items-center gap-2">
             <Clock className="text-primarydark w-6 h-6" />
-            <p className="font-bold text-primarydark text-xl">10:00 - 17:00</p>
+            <p className="font-bold text-primarydark  text-base sm:text-xl">
+              10:00 - 17:00
+            </p>
           </div>
           <div className="w-full flex justify-start items-center gap-2 ">
             <MapPin className="text-primarydark w-6 h-6" />
-            <p className="font-bold text-primarydark text-xl">
+            <p className="font-bold text-primarydark  text-base sm:text-xl">
               Galeria Szyb Wilson, Katowice
             </p>
           </div>
           <Button text="MAPA WYDARZENIA" href="/wydarzenie" />
           <h2
-            className={`text-3xl ${Gliker.className} text-secondary
+            className={`text-2xl sm:text-3xl ${Gliker.className} text-secondary
         }`}
           >
             Bądź na bieząco
           </h2>
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="hidden lg:flex flex-row gap-2 items-center justify-center  "
+            className="flex flex-col sm:flex-row gap-4 sm:gap-2 items-center justify-center  "
           >
             <input
               placeholder="Email"
-              className="bg-white rounded-3xl py-3 px-6 text-black focus:outline-primary"
+              className="bg-white rounded-3xl py-3 w-full sm:w-auto px-6 text-black focus:outline-primary"
               {...register("email")}
             />
             {errors.email && (
