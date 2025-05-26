@@ -109,7 +109,7 @@ export default function Hero() {
             >
               {isSubmitting ? "WYSYŁANIE" : "ZAPISZ SIĘ DO NEWSLETTERA"}
             </button>
-            <button className="absolute right-2 top-1 z-50 sm:hidden  rounded-full bg-primary p-2 text-white">
+            <button className="absolute right-2 top-1 z-20 sm:hidden  rounded-full bg-primary p-2 text-white">
               <Send />
             </button>
           </form>

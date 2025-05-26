@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${Now.className}    antialiased `}>
         <NavbarProvider />
-        <div className="mx-8 min-h-screen">{children}</div>
+        <div className="px-4 sm:px-8 min-h-screen">{children}</div>
         <FooterProvider />
       </body>
     </html>
