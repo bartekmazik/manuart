@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <div className="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth no-scrollbar">
+    <div className="h-screen overflow-y-scroll sm:snap-y sm:snap-mandatory scroll-smooth no-scrollbar">
       {/*snap-y snap-mandatory no-scrollbar*/}
       <div className="snap-end">
         <Hero />
