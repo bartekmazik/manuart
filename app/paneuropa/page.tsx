@@ -3,6 +3,7 @@ import { Gliker } from "../fonts/gliker";
 import Image from "next/image";
 import Link from "next/link";
 import { Globe } from "lucide-react";
+import Organisators from "../components/Organisators";
 
 const AboutUsPage = () => {
   return (
@@ -82,6 +83,7 @@ const AboutUsPage = () => {
           </Link>
         </div>
       </div>
+      <Organisators />
     </div>
   );
 };

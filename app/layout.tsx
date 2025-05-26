@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import Navbar from "./components/Navbar";
+import { NavbarProvider } from "./components/Navbar";
 import "./globals.css";
-import Footer from "./components/Footer";
+import { FooterProvider } from "./components/Footer";
 
 const Now = localFont({
   src: "../public/fonts/now.otf",
@@ -20,10 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${Now.className} pt-4  antialiased overflow-x-hidden`}>
-        <Navbar />
-        <div className="mx-8">{children}</div>
-        <Footer />
+      <body className={`${Now.className}    antialiased `}>
+        <NavbarProvider />
+        <div className="mx-8 min-h-screen">{children}</div>
+        <FooterProvider />
       </body>
     </html>
   );

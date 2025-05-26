@@ -1,96 +1,92 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import { Gliker } from "../fonts/gliker";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+export const FooterProvider = () => {
+  const pathname = usePathname();
+  return <>{pathname !== "/" ? <Footer /> : <></>}</>;
+};
 
 const Footer = () => {
   return (
-    <footer className="relative w-full sm:mt-36 text-backgroundsecondary overflow-hidden">
-      <div className="relative w-full min-h-[680px] sm:min-h-[520px]">
-        {/* footer wave */}
-        <Image
-          src="/footer.svg"
-          alt="footer background"
-          fill
-          className="object-cover w-full h-full"
-          style={{ filter: "drop-shadow(0 4px 10px rgba(0, 0, 0, 0.2))" }}
-        />
-
-        {/* footer content */}
-        <div className="absolute bg-transparent inset-0 px-8 sm:px-16 py-8 sm:py-20 flex flex-col sm:flex-row items-end justify-end sm:justify-between  text-center sm:text-left gap-10 sm:gap-0">
-          {/*left column*/}
-          <div className="flex flex-col items-center sm:items-start gap-4 w-full">
-            <h2
-              className={`${Gliker.className} text-primary text-3xl sm:text-4xl font-bold`}
+    <footer className="relative w-full h-[40vh] rounded-t-4xl overflow-x-visible sm:mt-36 text-backgroundsecondary bg-backgroundsecondary ">
+      {/* footer content */}
+      <div className="absolute bg-transparent inset-0 px-8 sm:px-16 py-8 sm:py-20 flex flex-col sm:flex-row items-end justify-end sm:justify-between  text-center sm:text-left gap-10 sm:gap-0">
+        {/*left column*/}
+        <div className="flex flex-col items-center sm:items-start gap-4 w-full">
+          <h2
+            className={`${Gliker.className} text-primary text-3xl sm:text-4xl font-bold`}
+          >
+            ManuArt Festiwal
+          </h2>
+          <div className="flex flex-col gap-2 text-primary text-lg font-medium">
+            <Link
+              href="/wydarzenie"
+              className="hover:text-primarydark transition-colors"
             >
-              Manuart Festival
-            </h2>
-            <div className="flex flex-col gap-2 text-primary text-lg font-medium">
-              <Link
-                href="/wydarzenie"
-                className="hover:text-primarydark transition-colors"
-              >
-                Wydarzenie
-              </Link>
-              <Link
-                href="/about"
-                className="hover:text-primarydark transition-colors"
-              >
-                O nas
-              </Link>
-              <Link
-                href="/partnerzy"
-                className="hover:text-primarydark transition-colors"
-              >
-                Partnerzy
-              </Link>
-              <Link
-                href="/kontakt"
-                className="hover:text-primarydark transition-colors"
-              >
-                Kontakt
-              </Link>
-            </div>
+              Wydarzenie
+            </Link>
+            <Link
+              href="/about"
+              className="hover:text-primarydark transition-colors"
+            >
+              O nas
+            </Link>
+            <Link
+              href="/partnerzy"
+              className="hover:text-primarydark transition-colors"
+            >
+              Partnerzy
+            </Link>
+            <Link
+              href="/kontakt"
+              className="hover:text-primarydark transition-colors"
+            >
+              Kontakt
+            </Link>
           </div>
-          {/* right column */}
-          <div className="w-full flex flex-col justify-center items-center sm:w-1/3 gap-4">
-            <p className={`${Gliker.className} text-primary text-2xl`}>
-              ZAOBSERWUJ NAS
-            </p>
-            <div className="flex flex-row justify-center items-center gap-4">
-              {[
-                {
-                  href: "https://facebook.com",
-                  src: "/facebook.svg",
-                  alt: "Facebook",
-                },
-                {
-                  href: "https://instagram.com",
-                  src: "/instagram.svg",
-                  alt: "Instagram",
-                },
-                {
-                  href: "https://linkedin.com",
-                  src: "/linkedin.svg",
-                  alt: "LinkedIn",
-                },
-                {
-                  href: "https://tiktok.com",
-                  src: "/tiktok.svg",
-                  alt: "TikTok",
-                },
-              ].map(({ href, src, alt }) => (
-                <Link key={alt} href={href} target="_blank">
-                  <Image
-                    src={src}
-                    alt={alt}
-                    width={32}
-                    height={32}
-                    className="hover:scale-110 transition-transform duration-200"
-                  />
-                </Link>
-              ))}
-            </div>
+        </div>
+        {/* right column */}
+        <div className="w-full flex flex-col justify-center items-center sm:w-1/3 gap-4">
+          <p className={`${Gliker.className} text-primary text-2xl`}>
+            ZAOBSERWUJ NAS
+          </p>
+          <div className="flex flex-row justify-center items-center gap-4">
+            {[
+              {
+                href: "https://facebook.com",
+                src: "/facebook.svg",
+                alt: "Facebook",
+              },
+              {
+                href: "https://instagram.com",
+                src: "/instagram.svg",
+                alt: "Instagram",
+              },
+              {
+                href: "https://linkedin.com",
+                src: "/linkedin.svg",
+                alt: "LinkedIn",
+              },
+              {
+                href: "https://tiktok.com",
+                src: "/tiktok.svg",
+                alt: "TikTok",
+              },
+            ].map(({ href, src, alt }) => (
+              <Link key={alt} href={href} target="_blank">
+                <Image
+                  src={src}
+                  alt={alt}
+                  width={32}
+                  height={32}
+                  className="hover:scale-110 transition-transform duration-200"
+                />
+              </Link>
+            ))}
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+
 import { Gliker } from "@/app/fonts/gliker";
 import Image from "next/image";
 
@@ -31,13 +31,7 @@ function Organisator() {
 
 const Organisators = () => {
   return (
-    <motion.section
-      className="flex flex-col items-center px-4 sm:px-8 py-16 gap-12 w-full  "
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
-      viewport={{ once: true }}
-    >
+    <div>
       <h1
         className={`${Gliker.className} text-3xl sm:text-5xl font-bold text-primary text-center`}
       >
@@ -50,7 +44,7 @@ const Organisators = () => {
         <Organisator />
         <Organisator />
       </div>
-    </motion.section>
+    </div>
   );
 };
 
