@@ -21,21 +21,29 @@ const Location = () => {
           MIEJSCE WYDARZENIA
         </h1>
         <div className="flex flex-col sm:grid grid-cols-2 gap-10 h-full sm:h-2/3">
-          <div className="bg-white h-1/3 sm:h-[50vh]  rounded-xl p-6 sm:p-12 flex flex-col gap-12">
+          <div className="bg-white h-1/3 sm:h-[50vh]  rounded-xl p-6 sm:p-12 flex flex-col gap-2 sm:gap-12">
             {" "}
-            <h2 className="text-lg sm:text-2xl">Galeria Szyb Wilson</h2>
-            <div className="flex flex-col  gap-4">
-              <div className="flex flex-row items-center justify-start gap-2">
-                <Building width={32} height={32} />
-                <p className="text-base sm:text-lg">Sala</p>
+            <h2 className="text-sm sm:text-2xl">Galeria Szyb Wilson</h2>
+            <div className="flex flex-col  sm:gap-4">
+              <div className="flex flex-row items-center justify-start ">
+                <div className="w-10 h-10 flex flex-col items-start justify-center">
+                  <Building />
+                </div>
+                <p className="text-sm sm:text-lg">Sala</p>
               </div>
-              <div className="flex flex-row items-center justify-start gap-2">
-                <MapPin width={32} height={32} />
-                <p className="text-base sm:text-lg">ul. Jakas tam</p>
+              <div className="flex flex-row items-center justify-start ">
+                <div className="w-10 h-10 flex flex-col items-start justify-center">
+                  <MapPin />
+                </div>
+
+                <p className="text-sm sm:text-lg">ul. Jakas tam</p>
               </div>
-              <div className="flex flex-row items-center justify-start gap-2">
-                <Building2 width={32} height={32} />
-                <p className="text-base sm:text-lg">40-000 Katowice</p>
+              <div className="flex flex-row items-center justify-start ">
+                <div className="w-10 h-10 flex flex-col items-start justify-center">
+                  <Building2 />
+                </div>
+
+                <p className="text-sm sm:text-lg">40-000 Katowice</p>
               </div>
             </div>
           </div>

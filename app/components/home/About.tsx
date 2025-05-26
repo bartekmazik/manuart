@@ -21,7 +21,7 @@ export default function About() {
             Kazdy przedmiot to opowiesc
           </h2>
           <div className="flex flex-col items-start justify-center w-full sm:w-5/6  gap-8">
-            <p className="bg-backgroundsecondary text-lg  p-4 rounded-xl font-bold text-primarydark shadow-md hover:shadow-lg transition">
+            <p className="bg-backgroundsecondary text-sm sm:text-base  p-4 rounded-xl  text-primarydark shadow-md hover:shadow-lg transition">
               14 czerwca w Galerii Szyb Wilson w Katowicach odbędzie się
               festiwal rękodzieła, który łączy pasję do unikalnych wyrobów z
               edukacją i networkingiem. To idealna okazja, aby odkryć talenty

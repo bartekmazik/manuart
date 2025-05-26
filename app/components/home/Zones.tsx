@@ -15,7 +15,7 @@ const Zone = () => {
           className="text-primary"
         />
       </div>
-      <p className="text-primarydark font-semibold   p-4">
+      <p className="text-primarydark text-sm    p-4">
         Strefa wystawców – Spotkaj małe, lokalne marki i poznaj ich ręcznie
         tworzone produkty. Każdy wystawca chętnie opowie o swojej pasji i
         procesie tworzenia, a Ty będziesz mieć okazję do zakupu unikalnych

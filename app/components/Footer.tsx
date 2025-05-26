@@ -18,11 +18,11 @@ const Footer = () => {
         {/*left column*/}
         <div className="flex flex-col items-start gap-4 w-full">
           <h2
-            className={`${Gliker.className} text-primary text-3xl sm:text-4xl font-bold`}
+            className={`${Gliker.className} text-primary text-lg sm:text-4xl font-bold`}
           >
             ManuArt Festiwal
           </h2>
-          <div className="flex flex-col gap-2 text-primary text-lg font-medium">
+          <div className="flex flex-col gap-2 text-primary text-base sm:text-lg font-medium">
             <Link
               href="/wydarzenie"
               className="hover:text-primarydark transition-colors"
@@ -51,7 +51,7 @@ const Footer = () => {
         </div>
         {/* right column */}
         <div className="w-full flex flex-col justify-center items-start sm:items-center sm:w-1/3 gap-4">
-          <p className={`${Gliker.className} text-primary text-2xl`}>
+          <p className={`${Gliker.className} text-primary text-lg sm:text-2xl`}>
             ZAOBSERWUJ NAS
           </p>
           <div className="flex flex-row justify-center items-center gap-4">

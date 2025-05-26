@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Gliker } from "../../fonts/gliker";
-import { CalendarDays, Clock, MapPin } from "lucide-react";
+import { CalendarDays, Clock, MapPin, Send } from "lucide-react";
 import { Button } from "../Button";
 import { motion } from "motion/react";
 import * as z from "zod";
@@ -53,11 +53,11 @@ export default function Hero() {
       transition={{ duration: 1 }}
       className="h-screen pt-6"
     >
-      <div className="relative w-full bg-backgroundsecondary h-[90%] rounded-4xl flex flex-row justify-between shadow-md hover:shadow-lg transition">
+      <div className="relative w-full bg-backgroundsecondary h-[95%] sm:h-[90%] rounded-4xl flex flex-row justify-between shadow-md hover:shadow-lg transition">
         <Navbar />
-        <div className="mt-28 p-6 lg:w-1/2 w-full gap-4 flex flex-col items-start justify-start">
+        <div className="mt-20 sm:mt-28 p-6 lg:w-1/2 w-full gap-4 flex flex-col items-start justify-start">
           <h1
-            className={`font-bold ${Gliker.className} text-4xl sm:text-5xl text-primary`}
+            className={`font-bold ${Gliker.className} text-3xl sm:text-5xl text-primary`}
           >
             ManuArt Festiwal
           </h1>
@@ -94,26 +94,28 @@ export default function Hero() {
           </h2>
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="flex flex-col sm:flex-row gap-4 sm:gap-2 items-center justify-center  "
+            className="relative flex bg-white rounded-3xl  w-full sm:w-auto sm:bg-transparent  flex-row gap-4 sm:gap-2 items-center justify-center  "
           >
             <input
               placeholder="Email"
-              className="bg-white rounded-3xl py-3 w-full sm:w-auto px-6 text-black focus:outline-primary"
+              className="bg-white rounded-3xl py-3 w-full sm:w-auto px-6 text-black sm:focus:outline-primary"
               {...register("email")}
             />
-            {errors.email && (
-              <p className="text-red-500 text-sm mt-1 ml-2">
-                {errors.email.message}
-              </p>
-            )}
+
             <button
               disabled={isSubmitting}
               type="submit"
-              className="bg-primary rounded-3xl py-3 px-6 text-white cursor-pointer hover:bg-primarydark transition-colors duration-300 font-extrabold"
+              className="hidden sm:block bg-primary rounded-3xl py-3 px-6 text-white cursor-pointer hover:bg-primarydark transition-colors duration-300 font-extrabold"
             >
               {isSubmitting ? "WYSYŁANIE" : "ZAPISZ SIĘ DO NEWSLETTERA"}
             </button>
+            <button className="absolute right-2 top-1 z-50 sm:hidden  rounded-full bg-primary p-2 text-white">
+              <Send />
+            </button>
           </form>
+          {errors.email && (
+            <p className="text-red-500 text-sm ml-2">{errors.email.message}</p>
+          )}
         </div>
         {/* <div className="hidden lg:block w-1/2 relative ">
           <Image src="/heroguy.png" fill={true} alt="guy" objectFit="contain" />
