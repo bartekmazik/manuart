@@ -5,13 +5,13 @@ import Image from "next/image";
 
 function Organisator() {
   return (
-    <div className="flex flex-col items-center gap-3 bg-backgroundsecondary p-4 rounded-2xl shadow-md hover:shadow-lg transition">
-      <div className="relative rounded-full w-24 h-24 sm:w-28 sm:h-28 border-4 border-primary">
+    <div className="flex min-h-[70vh] flex-col w-full items-center gap-3 bg-background p-4 rounded-2xl shadow-md hover:shadow-lg transition">
+      <div className="relative rounded-2xl h-2/3 overflow-hidden  aspect-square w-full  border-4 bg-primary">
         <Image
           src={"/steve.jpg"}
           fill
           alt="organisator"
-          className="rounded-full object-cover"
+          className=" object-cover"
         />
       </div>
 
@@ -31,14 +31,15 @@ function Organisator() {
 
 const Organisators = () => {
   return (
-    <div>
+    <div className="w-full">
       <h1
-        className={`${Gliker.className} text-3xl sm:text-5xl font-bold text-primary text-center`}
+        className={`${Gliker.className} text-3xl sm:text-5xl font-bold mb-6 text-background 
+        `}
       >
         ORGANIZATORZY
       </h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-8 max-w-screen-xl w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-8  w-full">
         <Organisator />
         <Organisator />
         <Organisator />

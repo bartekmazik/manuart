@@ -4,7 +4,7 @@ import { Gliker } from "@/app/fonts/gliker";
 
 const Zone = () => {
   return (
-    <div className=" flex flex-col min-h-[70vh] justify-start px-2 py-8 items-center shadow-lg gap-2 bg-backgroundsecondary rounded-xl">
+    <div className=" flex flex-col min-h-[70vh] justify-start px-2 py-8 items-center shadow-lg gap-2 bg-background rounded-xl">
       <div className="flex flex-row items-center justify-center gap-2">
         <h3 className="text-2xl font-bold text-primary">Strefa jeden</h3>
         <Image
@@ -29,7 +29,7 @@ const Zones = () => {
   return (
     <div className="min-h-screen py-16">
       <h1
-        className={`${Gliker.className} font-bold text-3xl sm:text-5xl  text-primary mb-8`}
+        className={`${Gliker.className} font-bold text-3xl sm:text-5xl  text-background mb-8`}
       >
         STREFY WYDARZENIA
       </h1>

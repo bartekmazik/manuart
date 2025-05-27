@@ -17,21 +17,16 @@ const sponsors = [
 const Partners = () => {
   return (
     <div className=" min-h-screen  overflow-hidden py-8 sm:py-16">
-      <div className="relative p-8 min-h-[90vh] bg-backgroundsecondary rounded-4xl w-full gap-8 flex flex-col justify-start items-start">
+      <div className="relative p-8 min-h-[90vh] bg-background rounded-4xl w-full gap-8 flex flex-col justify-start items-start">
         <h1
           className={`${Gliker.className} font-bold text-3xl sm:text-5xl  text-primary sm:mb-8`}
         >
           PARTNERZY
         </h1>
-        <div className="grid justify-center grid-cols-2 grid-rows-3 sm:grid-cols-6 sm:grid-row-2">
+        <div className="w-full grid  grid-cols-2 place-items-center grid-rows-3 sm:grid-cols-6 sm:grid-row-2">
           {sponsors.map((logo, index) => (
-            <div key={index} className="relative w-24 h-24 sm:w-36 sm:h-36 ">
-              <Image
-                src={logo}
-                alt={`sponsor-${index}`}
-                fill
-                className="object-contain"
-              />
+            <div key={index} className="relative w-24 h-24 sm:w-36 sm:h-36  ">
+              <Image src={logo} alt={`sponsor-${index}`} fill />
             </div>
           ))}
         </div>
@@ -40,6 +35,13 @@ const Partners = () => {
         >
           PARTNERZY MEDIALNI
         </h1>
+        <div className="w-full grid  grid-cols-2 place-items-center grid-rows-3 sm:grid-cols-6 sm:grid-row-2">
+          {sponsors.map((logo, index) => (
+            <div key={index} className="relative w-24 h-24 sm:w-36 sm:h-36  ">
+              <Image src={logo} alt={`sponsor-${index}`} fill />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

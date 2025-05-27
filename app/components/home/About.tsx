@@ -16,12 +16,12 @@ export default function About() {
       >
         <div className="flex flex-col items-start justify-start w-full sm:w-2/3 h-1/2 sm:pr-12 gap-8 ">
           <h2
-            className={`${Gliker.className} text-primary text-3xl sm:text-5xl `}
+            className={`${Gliker.className} text-background text-3xl sm:text-5xl `}
           >
             Kazdy przedmiot to opowiesc
           </h2>
           <div className="flex flex-col items-start justify-center w-full sm:w-5/6  gap-8">
-            <p className="bg-backgroundsecondary text-sm sm:text-base  p-4 rounded-xl  text-primarydark shadow-md hover:shadow-lg transition">
+            <p className="bg-background text-sm sm:text-base  p-4 rounded-xl  text-primarydark shadow-md hover:shadow-lg transition">
               14 czerwca w Galerii Szyb Wilson w Katowicach odbędzie się
               festiwal rękodzieła, który łączy pasję do unikalnych wyrobów z
               edukacją i networkingiem. To idealna okazja, aby odkryć talenty
@@ -35,6 +35,7 @@ export default function About() {
             <Button
               text="WYDARZENIE NA FACEBOOKU"
               href="https://www.facebook.com/Paneuropa"
+              variant="light"
             />
           </div>
         </div>
@@ -43,7 +44,7 @@ export default function About() {
             src="/heroguy.png"
             alt="rider"
             fill
-            className="object-cover rounded-4xl bg-backgroundsecondary"
+            className="object-cover rounded-4xl bg-background"
           />
         </div>
       </motion.section>

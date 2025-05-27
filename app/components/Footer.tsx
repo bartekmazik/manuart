@@ -12,7 +12,7 @@ export const FooterProvider = () => {
 
 const Footer = () => {
   return (
-    <footer className="relative w-full h-[50vh] sm:h-[40vh] rounded-t-4xl overflow-x-visible sm:mt-36 text-backgroundsecondary bg-backgroundsecondary ">
+    <footer className="relative w-full h-[50vh] sm:h-[40vh] rounded-t-4xl overflow-x-visible sm:mt-36 text-backgroundsecondary bg-background ">
       {/* footer content */}
       <div className="absolute bg-transparent inset-0 px-8 sm:px-16 py-8 sm:py-20 flex flex-col sm:flex-row items-end justify-end sm:justify-between  text-left gap-10 sm:gap-0">
         {/*left column*/}

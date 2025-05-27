@@ -7,7 +7,7 @@ import Organisators from "../components/Organisators";
 
 const AboutUsPage = () => {
   return (
-    <div className="flex flex-col gap-12 pt-16 px-6 sm:px-12 max-w-6xl mx-auto text-primary">
+    <div className="flex flex-col gap-12 py-12  sm:px-12 mx-auto text-background">
       <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
         <h1 className={`${Gliker.className} text-4xl sm:text-5xl font-bold`}>
           Organizacja Studencka PANEUROPA
@@ -25,7 +25,7 @@ const AboutUsPage = () => {
       </div>
 
       {/* description */}
-      <p className="bg-backgroundsecondary text-primarydark text-base sm:text-lg p-6 rounded-2xl font-medium leading-relaxed shadow-lg ">
+      <p className="bg-background text-primary text-sm sm:text-lg p-6 rounded-2xl font-medium  shadow-lg ">
         Organizacja Studencka PANEUROPA Uniwersytetu Ekonomicznego w Katowicach
         działa już od 25 lat. Zrzeszamy ambitnych, pełnych pasji studentów,
         gotowych stawiać czoła wyzwaniom i rozwijać swoje umiejętności poprzez
@@ -45,8 +45,8 @@ const AboutUsPage = () => {
       </p>
 
       {/*social medias*/}
-      <div className="flex bg-backgroundsecondary p-4 rounded-2xl shadow-lg flex-col sm:flex-row items-start sm:justify-between sm:items-center gap-4 sm:gap-6">
-        <p className="  text-primarydark">
+      <div className="flex bg-background p-4 rounded-2xl shadow-lg flex-col sm:flex-row items-start sm:justify-between sm:items-center gap-4 sm:gap-6">
+        <p className="  text-primary text-sm sm:text-lg">
           Śledź nas na mediach społecznościowych, aby być na bieżąco:
         </p>
         <div className="flex flex-row items-center gap-4 self-center ">

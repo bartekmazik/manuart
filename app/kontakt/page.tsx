@@ -18,7 +18,7 @@ type MessageBody = z.infer<typeof messageSchema>;
 
 const ContactPerson = () => {
   return (
-    <div className="w-full sm:w-1/3 p-4 sm:p-6 rounded-3xl shadow-xl flex flex-col items-center gap-4 bg-backgroundsecondary font-bold text-primary transition-all duration-300">
+    <div className="w-full sm:w-1/3 p-4 sm:p-6 rounded-3xl shadow-xl flex flex-col items-center gap-4 bg-background font-bold text-primary transition-all duration-300">
       <div className="relative w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden shadow-lg">
         <Image
           src="/steve.jpg"
@@ -78,7 +78,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="w-full sm:w-1/3 h-auto flex flex-col text-primary bg-backgroundsecondary shadow-xl rounded-3xl gap-8 sm:gap-12 p-4 sm:p-6">
+    <div className="w-full sm:w-1/3 h-auto flex flex-col text-primary bg-background shadow-xl rounded-3xl gap-8 sm:gap-12 p-4 sm:p-6">
       <h2 className="text-xl sm:text-2xl font-bold self-center">
         Napisz do nas!
       </h2>
@@ -89,7 +89,7 @@ const ContactForm = () => {
         <div>
           <input
             placeholder="Email"
-            className="bg-white py-2 px-4 text-black rounded-full w-full"
+            className="bg-white py-2 px-4 text-black rounded-full w-full  shadow-md"
             {...register("email")}
           />
           {errors.email && (
@@ -101,7 +101,7 @@ const ContactForm = () => {
         <div>
           <textarea
             placeholder="Twoja wiadomość"
-            className="bg-white py-2 px-4 text-black rounded-2xl w-full min-h-[100px]"
+            className="bg-white py-2 px-4 text-black rounded-2xl w-full min-h-[100px] shadow-md"
             {...register("message")}
           />
           {errors.message && (
@@ -113,7 +113,7 @@ const ContactForm = () => {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="bg-primary py-2 px-4 text-white w-1/2 self-center font-bold rounded-full disabled:opacity-50"
+          className="bg-primary cursor-pointer hover:bg-primarydark transition-colors duration-300 py-2 px-4 text-white w-1/2 self-center font-bold rounded-full disabled:opacity-50"
         >
           {isSubmitting ? "WYSYŁANIE" : "WYŚLIJ"}
         </button>
@@ -124,11 +124,13 @@ const ContactForm = () => {
 
 const ContactPage = () => {
   return (
-    <div className="flex flex-col px-4 pt-8 sm:pt-12 justify-center items-start gap-8 sm:gap-12">
-      <h1 className={`${Gliker.className} text-4xl sm:text-5xl text-primary`}>
+    <div className="flex flex-col px-4 py-12 justify-center items-start gap-8 sm:gap-12">
+      <h1
+        className={`${Gliker.className} text-4xl sm:text-5xl text-background text-shadow-md`}
+      >
         Kontakt
       </h1>
-      <div className="w-full flex flex-col gap-6 sm:gap-8 sm:flex-row sm:justify-between">
+      <div className="w-full flex flex-col gap-6 sm:gap-8 sm:flex-row sm:justify-start">
         <ContactForm />
         <ContactPerson />
       </div>

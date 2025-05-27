@@ -15,9 +15,9 @@ export const NavbarProvider = () => {
 
 function isHome(path: string) {
   if (path === "/") {
-    return "absolute top-0 left-0 w-full  pt-2";
+    return "absolute top-0 left-0 w-full  pt-2 text-primary";
   } else {
-    return "pt-2 w-screen";
+    return "bg-background w-screen text-background";
   }
 }
 
@@ -46,16 +46,16 @@ function Dropdown({ onClose }: { onClose: () => void }) {
       <Link href="/wydarzenie" onClick={onClose}>
         Mapa wydarzenia
       </Link>
-      <Link href="/partnerzy" onClick={onClose}>
+      <Link href="/warsztaty" onClick={onClose}>
         Warsztaty
       </Link>
-      <Link href="/partnerzy" onClick={onClose}>
+      <Link href="/wystawcy" onClick={onClose}>
         Wystawcy
       </Link>{" "}
       <Link href="/partnerzy" onClick={onClose}>
         Partnerzy
       </Link>{" "}
-      <Link href="/partnerzy" onClick={onClose}>
+      <Link href="/regulamin" onClick={onClose}>
         Regulamin
       </Link>{" "}
       <Link href="/paneuropa" onClick={onClose}>
@@ -91,19 +91,19 @@ const Navbar = () => {
           </Link>
 
           <Link
-            href={"/kontakt"}
+            href={"/wystawcy"}
             className="hover:text-primarydark transition-colors duration-500"
           >
             Wystawcy
           </Link>
           <Link
-            href={"/kontakt"}
+            href={"/warsztaty"}
             className="hover:text-primarydark transition-colors duration-500"
           >
             Warsztaty
           </Link>
           <Link
-            href={"/kontakt"}
+            href={"/regulamin"}
             className="hover:text-primarydark transition-colors duration-500"
           >
             Regulamin
@@ -128,7 +128,7 @@ const Navbar = () => {
           </Link>
         </div>
         <button
-          className="sm:hidden p-4 sm:self-start "
+          className="sm:hidden p-4 sm:self-start text-primary "
           onClick={() => setIsOpen(!isOpen)}
         >
           <Menu />

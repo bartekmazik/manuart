@@ -53,7 +53,7 @@ export default function Hero() {
       transition={{ duration: 1 }}
       className="h-screen pt-6"
     >
-      <div className="relative w-full bg-backgroundsecondary h-[95%] sm:h-[90%] rounded-4xl flex flex-row justify-between shadow-md hover:shadow-lg transition">
+      <div className="relative w-full bg-background h-[95%] sm:h-[90%] rounded-4xl flex flex-row justify-between shadow-md hover:shadow-lg transition">
         <Navbar />
         <div className="mt-20 sm:mt-28 p-6 lg:w-1/2 w-full gap-4 flex flex-col items-start justify-start">
           <h1
@@ -67,25 +67,21 @@ export default function Hero() {
             {" "}
             Twórz i Inspiruj
           </h2>
-          <div className="w-full flex justify-start items-center gap-2 ">
-            <CalendarDays className="text-primarydark w-6 h-6" />
-            <p className="font-bold text-primarydark  text-base sm:text-xl">
-              14 czerwca 2025
-            </p>
+          <div className="w-full flex justify-start items-center text-primary gap-2 ">
+            <CalendarDays className=" w-6 h-6" />
+            <p className="font-bold   text-base sm:text-xl">14 czerwca 2025</p>
           </div>
-          <div className="w-full flex justify-start items-center gap-2">
-            <Clock className="text-primarydark w-6 h-6" />
-            <p className="font-bold text-primarydark  text-base sm:text-xl">
-              10:00 - 17:00
-            </p>
+          <div className="w-full flex justify-start text-primary items-center gap-2">
+            <Clock className=" w-6 h-6" />
+            <p className="font-bold   text-base sm:text-xl">10:00 - 17:00</p>
           </div>
-          <div className="w-full flex justify-start items-center gap-2 ">
-            <MapPin className="text-primarydark w-6 h-6" />
-            <p className="font-bold text-primarydark  text-base sm:text-xl">
+          <div className="w-full flex justify-start text-primary items-center gap-2 ">
+            <MapPin className=" w-6 h-6" />
+            <p className="font-bold   text-base sm:text-xl">
               Galeria Szyb Wilson, Katowice
             </p>
           </div>
-          <Button text="MAPA WYDARZENIA" href="/wydarzenie" />
+          <Button text="MAPA WYDARZENIA" href="/wydarzenie" variant="green" />
           <h2
             className={`text-2xl sm:text-3xl ${Gliker.className} text-secondary
         }`}
@@ -98,7 +94,7 @@ export default function Hero() {
           >
             <input
               placeholder="Email"
-              className="bg-white rounded-3xl py-3 w-full sm:w-auto px-6 text-black sm:focus:outline-primary"
+              className="bg-white rounded-3xl py-3 w-full sm:w-auto px-6 text-black shadow-md"
               {...register("email")}
             />
 
