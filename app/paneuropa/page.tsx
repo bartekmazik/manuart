@@ -4,6 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { Globe } from "lucide-react";
 import Organisators from "../components/Organisators";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "O nas",
+};
 
 const AboutUsPage = () => {
   return (

@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Art Studio Cyprian",
+    "description": "Art Studio Cyprian to pracownia specjalizująca się w ręcznej produkcji podobrazia malarskiego z wysokiej jakości materiałów. Firma łączy rzemieślniczą precyzję z troską o środowisko, oferując ekologiczne płótna malarskie. To idealny wybór dla artystów ceniących jakość, trwałość i odpowiedzialne podejście do sztuki.",
+    "imageUrl": "/partners/artstudio.png",
+    "imageAlt": "Logo Art Studio Cyprian",
+    "isStrategicPartner": true
+  },
+  {
+    "name": "Kolektyw Studio",
+    "description": "Kolektyw Studio to katowicka manufaktura kulinarna łącząca piekarnię rzemieślniczą, naturalne przetwory i catering okolicznościowy. Założona przez zespół pasjonatów i profesjonalistów gastronomii, oferuje też szkolenia z szefem Marcinem Czubakiem. To miejsce, gdzie pasja do jedzenia idzie w parze z jakością i kreatywnością, działając lokalnie i poza granicami Śląska.",
+    "imageUrl": "/partners/kolektyw.png",
+    "imageAlt": "Logo Kolektyw Studio",
+    "isStrategicPartner": true
+  },
+  {
+    "name": "Pasieka Morawskich i Ekomiody",
+    "description": "Pasieka Morawskich to rodzinna firma z Małopolski, gdzie tradycja pszczelarska spotyka się z nowoczesnym podejściem. Tworzą naturalny, lokalny miód, powstający z dbałością o pszczoły i środowisko. To produkty pełne smaku, zdrowia i serca, które łączą ludzi z naturą.",
+    "imageUrl": "/partners/pasieka.svg",
+    "imageAlt": "Logo Pasieki Morawskich i Ekomiodów",
+    "isStrategicPartner": true
+  },
+  {
+    "name": "Angelos",
+    "description": "Angelos.pl to wyjątkowy sklep internetowy, który promuje rękodzieło tworzone przez organizacje społeczne z całej Polski. Kupując unikalne produkty – od ceramiki po naturalne przetwory – wspierasz cele statutowe fundacji, stowarzyszeń i spółdzielni socjalnych. To rękodzieło, które realnie zmienia świat na lepsze.",
+    "imageUrl": "/partners/angelos.svg",
+    "imageAlt": "Logo Angelos",
+    "isStrategicPartner": false
+  },
+  {
+    "name": "Bona Dea (Pasmanteria Marimpex)",
+    "description": "Pasmanteria Marimpex to rodzinna firma z ponad 30-letnim doświadczeniem, która od lat wspiera miłośników szycia i rękodzieła. W swojej ofercie posiada szeroki wybór nici Ariadna, włóczek, wełen oraz akcesoriów krawieckich – od guzików po taśmy. To miejsce, w którym tradycja łączy się z pasją i profesjonalizmem.",
+    "imageUrl": "/partners/bonadea.svg",
+    "imageAlt": "Logo Pasmanterii Marimpex (Bona Dea)",
+    "isStrategicPartner": false
+  },
+  {
+    "name": "Galeria Sztuki Współczesnej BWA",
+    "description": "Galeria Sztuki Współczesnej BWA w Katowicach to jedno z najważniejszych miejsc na artystycznej mapie Śląska. Od lat prezentuje najciekawsze zjawiska we współczesnej sztuce polskiej i zagranicznej, łącząc wystawy z edukacją i promocją młodych twórców. To przestrzeń otwarta na eksperymenty, dialog i kreatywność, która inspiruje i zachęca do odkrywania sztuki na nowo.",
+    "imageUrl": "/partners/bwa.svg",
+    "imageAlt": "Logo Galerii BWA Katowice",
+    "isStrategicPartner": false
+  },
+  {
+    "name": "Szkoła Języków Azjatyckich MOLIHUA",
+    "description": "Szkoła Języków Azjatyckich MOLIHUA to przestrzeń, gdzie nauka języków japońskiego, chińskiego i koreańskiego łączy się z poznawaniem kultury i nawiązywaniem wyjątkowych relacji. Stawiając na profesjonalizm i indywidualne podejście, szkoła oferuje także warsztaty i wycieczki, które wzbogacają doświadczenie nauki. To idealne miejsce dla osób szukających wyzwań i pasji w poznawaniu Azji.",
+    "imageUrl": "/partners/molihua.png",
+    "imageAlt": "Logo Szkoły MOLIHUA",
+    "isStrategicPartner": false
+  },
+  {
+    "name": "Cuda Mamy",
+    "description": "Cuda Mamy to pracownia pełna pasji, gdzie florystyka ślubna i dekoracyjna łączy się z rękodziełem – makramami, szyciem ubrań i drewnianymi domkami. Twórczyni z radością dzieli się swoją wiedzą na warsztatach dla dzieci i dorosłych, inspirując do odkrywania własnej kreatywności. To miejsce, gdzie każdy projekt powstaje z sercem i zaangażowaniem.",
+    "imageUrl": "/partners/cudamamy.svg",
+    "imageAlt": "Logo Cuda Mamy",
+    "isStrategicPartner": false
+  }
+]

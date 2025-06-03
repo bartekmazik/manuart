@@ -22,15 +22,24 @@ export default function About() {
           </h2>
           <div className="flex flex-col items-start justify-center w-full sm:w-5/6  gap-8">
             <p className="bg-background text-sm sm:text-base  p-4 rounded-xl  text-primarydark shadow-md hover:shadow-lg transition">
-              14 czerwca w Galerii Szyb Wilson w Katowicach odbędzie się
-              festiwal rękodzieła, który łączy pasję do unikalnych wyrobów z
-              edukacją i networkingiem. To idealna okazja, aby odkryć talenty
-              lokalnych twórców, poznać ich historię i zobaczyć, jak powstają
-              wyjątkowe produkty. 14 czerwca w Galerii Szyb Wilson w Katowicach
-              odbędzie się festiwal rękodzieła, który łączy pasję do unikalnych
-              wyrobów z edukacją i networkingiem. To idealna okazja, aby odkryć
-              talenty lokalnych twórców, poznać ich historię i zobaczyć, jak
-              powstają wyjątkowe produkty.
+              ManuArt Festiwal – Twórz i Inspiruj! to wyjątkowe wydarzenie,
+              które już 14 czerwca 2025 roku ożywi industrialne wnętrza Galerii
+              Szyb Wilson w Katowicach! To prawdziwe święto kreatywności, gdzie
+              pasja do rękodzieła spotyka się z edukacją i lokalnym duchem
+              twórczości. Tworzony przez Organizację Studencką PANEUROPA
+              Uniwersytetu Ekonomicznego w Katowicach. Festiwal jest otwarty na
+              wszystkich, którzy chcą odkryć magię unikatowych, ręcznie
+              robionych przedmiotów, poznać inspirujące historie twórców i
+              samemu spróbować swoich sił podczas kreatywnych warsztatów. W
+              ciągu dnia czeka na Was mnóstwo atrakcji: od stoisk lokalnych
+              artystów i rzemieślników, przez inspirujące prelekcje o ekologii,
+              przedsiębiorczości i rozwoju marki, aż po możliwość zanurzenia się
+              w twórczym procesie i stworzenia czegoś własnoręcznie. ManuArt
+              Festiwal to nie tylko targi – to przestrzeń pełna pasji,
+              inspiracji i wymiany doświadczeń. Idealne miejsce, by spotkać
+              ludzi z podobną energią, zdobyć nową wiedzę i odnaleźć piękno w
+              detalach, które nadają przedmiotom duszę. Dołącz do nas i odkryj,
+              że każdy przedmiot to opowieść!
             </p>
             <Button
               text="WYDARZENIE NA FACEBOOKU"

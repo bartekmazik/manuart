@@ -2,6 +2,11 @@ import React from "react";
 import { Gliker } from "../fonts/gliker";
 import Image from "next/image";
 import { PenTool } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Warsztaty",
+};
 
 const Workshop = () => {
   return (

@@ -1,5 +1,10 @@
 import React from "react";
 import { Gliker } from "../fonts/gliker";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Regulamin",
+};
 
 const Regulations = () => {
   return (

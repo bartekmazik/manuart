@@ -1,5 +1,10 @@
 import { Button } from "./components/Button";
 import { Gliker } from "./fonts/gliker";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Nie znaleziono strony",
+};
 
 const NotFound = () => {
   return (

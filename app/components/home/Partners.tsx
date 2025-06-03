@@ -5,14 +5,15 @@ import React from "react";
 import { Gliker } from "@/app/fonts/gliker";
 
 const sponsors = [
-  "/logo.png",
-  "/logo.png",
-  "/logo.png",
-  "/logo.png",
-  "/logo.png",
-  "/logo.png",
+  "/partners/angelos.svg",
+  "/partners/artstudio.png",
+  "/partners/bonadea.svg",
+  "/partners/bwa.svg",
+  "/partners/cudamamy.svg",
+  "/partners/kolektyw.png",
+  "/partners/molihua.png",
+  "/partners/pasieka.svg",
 ];
-//needs to be above 3 items in array otherwise its not filling enough space
 
 const Partners = () => {
   return (
@@ -23,9 +24,9 @@ const Partners = () => {
         >
           PARTNERZY
         </h1>
-        <div className="w-full grid  grid-cols-2 place-items-center grid-rows-3 sm:grid-cols-6 sm:grid-row-2">
+        <div className="w-full h-full bg-white p-6 rounded-xl grid items-stretch  grid-cols-2 place-items-center grid-rows-3 sm:grid-cols-6 sm:grid-rows-2">
           {sponsors.map((logo, index) => (
-            <div key={index} className="relative w-24 h-24 sm:w-36 sm:h-36  ">
+            <div key={index} className="relative w-24 h-24 sm:w-40 sm:h-40  ">
               <Image src={logo} alt={`sponsor-${index}`} fill />
             </div>
           ))}
@@ -35,7 +36,7 @@ const Partners = () => {
         >
           PARTNERZY MEDIALNI
         </h1>
-        <div className="w-full grid  grid-cols-2 place-items-center grid-rows-3 sm:grid-cols-6 sm:grid-row-2">
+        <div className="w-full  h-full bg-white p-6 rounded-xl grid  grid-cols-2 place-items-center grid-rows-3 sm:grid-cols-6 sm:grid-rows-2">
           {sponsors.map((logo, index) => (
             <div key={index} className="relative w-24 h-24 sm:w-36 sm:h-36  ">
               <Image src={logo} alt={`sponsor-${index}`} fill />

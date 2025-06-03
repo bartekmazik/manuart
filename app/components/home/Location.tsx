@@ -32,21 +32,21 @@ const Location = () => {
                   <div className="w-10 h-10 flex flex-col items-start justify-center">
                     <Building />
                   </div>
-                  <p className="text-sm sm:text-lg">Sala</p>
+                  <p className="text-sm sm:text-lg">Sala główna</p>
                 </div>
                 <div className="flex flex-row items-center justify-start ">
                   <div className="w-10 h-10 flex flex-col items-start justify-center">
                     <MapPin />
                   </div>
 
-                  <p className="text-sm sm:text-lg">ul. Jakas tam</p>
+                  <p className="text-sm sm:text-lg">ul. Oswobodzenia 1</p>
                 </div>
                 <div className="flex flex-row items-center justify-start ">
                   <div className="w-10 h-10 flex flex-col items-start justify-center">
                     <Building2 />
                   </div>
 
-                  <p className="text-sm sm:text-lg">40-000 Katowice</p>
+                  <p className="text-sm sm:text-lg">40 - 403 Katowice</p>
                 </div>
               </div>
             </div>

@@ -1,0 +1,156 @@
+[
+  {
+    "name": "BEEŻO",
+    "description": "BEEŻOO to marka biżuterii handmade, w której pasja i różnorodność spotykają się z naturą i rzemiosłem. W tworzeniu wykorzystywane są materiały takie jak skóra, korek, len, minerały czy ceramika, a ostatnio również technika Tiffany’ego, dzięki której powstają unikalne wisiory. Styl boho przenika zarówno biżuterię, jak i ręcznie malowane zakładki czy sutaszowe kolczyki, tworząc spójną, artystyczną całość.",
+    "imageUrl": "/artists/beezoo.jpg",
+    "imageAlt": "Logo marki biżuterii handmade BEEŻO",
+    "tags": ["biżuteria", "natura"]
+  },
+  {
+    "name": "Yaga Yaga Handmade Joanna Sitkiewicz",
+    "description": "Yaga Yaga Handmade to marka stworzona z pasji do szydełka. Yaga dzierga od 2019 roku, a od 2022 tworzy autorskie wzory, które trafiają do miłośników rękodzieła na całym świecie. Jest pomysłodawczynią i organizatorką Ogólnopolskiego Konkursu Dziewiarskiego oraz twórczynią wydarzenia Splotfest, które łączy społeczność kreatywnych dusz.",
+    "imageUrl": "/artists/yaga.svg",
+    "imageAlt": "Logo marki Yaga Yaga Handmade",
+    "tags": []
+  },
+  {
+    "name": "Balik Hand Made Barbara Kalfa",
+    "description": "",
+    "imageUrl": "/artists/balik.svg",
+    "imageAlt": "Logo Balik Hand Made",
+    "tags": []
+  },
+  {
+    "name": "Quality Touch Danuta Piechulek",
+    "description": "Quality Touch to przestrzeń, w której edukacja spotyka się z pasją tworzenia. Firma oferuje kursy masażu, m.in. lomi lomi i Kobido, a także warsztaty rękodzielnicze, takie jak tworzenie świec i zawieszek sojowych czy kolczyków z piór. To holistyczne podejście do rozwoju – zarówno osobistego, jak i twórczego.",
+    "imageUrl": "/artists/qualitytouch.png",
+    "imageAlt": "Logo Quality Touch",
+    "tags": ["edukacja"]
+  },
+  {
+    "name": "Art Studio",
+    "description": "Art Studio Cyprian to pracownia specjalizująca się w ręcznej produkcji podobrazia malarskiego z wysokiej jakości materiałów. Firma łączy rzemieślniczą precyzję z troską o środowisko, oferując ekologiczne płótna malarskie. To idealny wybór dla artystów ceniących jakość, trwałość i odpowiedzialne podejście do sztuki.",
+    "imageUrl": "/artists/artstudio.png",
+    "imageAlt": "Logo Art Studio",
+    "tags": ["sztuka"]
+  },
+  {
+    "name": "mom's candles Magdalena Bielska",
+    "description": "Mom’s Candles to katowicka manufaktura, w której ręcznie tworzone świece sojowe, woski zapachowe i flowerboxy łączą w sobie pasję, estetykę i ekologiczne podejście. Za marką stoi mama trzech córek, która z sercem buduje domową atmosferę zamkniętą w naturalnych produktach. To ciepło, które możesz poczuć w każdym detalu.",
+    "imageUrl": "/artists/monscandles.svg",
+    "imageAlt": "Logo marki mom's candles",
+    "tags": ["świece", "ekologia", "dom"]
+  },
+  {
+    "name": "New Life Agnieszka Niedballa (Warsztatownia Katowice)",
+    "description": "Warsztatownia Katowice to kreatywna przestrzeń stworzona przez Kamę Balicką, gdzie rękodzieło staje się sposobem na wyrażenie siebie i wspólne spędzanie czasu. W ofercie znajdują się warsztaty z tworzenia biżuterii, świec czy ozdobnych lamp – dla dzieci, dorosłych i grup. To idealne miejsce na twórcze spotkania, urodziny czy wyjątkowe wydarzenia pełne inspiracji.",
+    "imageUrl": "/artists/warsztatownia.svg",
+    "imageAlt": "Logo Warsztatowni Katowice",
+    "tags": ["warsztaty", "biżuteria", "rękodzieło"]
+  },
+  {
+    "name": "Paulina Wojciechowska-Kusak – Kubki Mamy",
+    "description": "Kubki Mamy to ręcznie malowane kubki z charakterem – bez cenzury, za to z humorem i autentycznością. Różnorodność kształtów, kolorów i niegrzecznych haseł sprawia, że każdy znajdzie tu coś dla siebie. Za marką stoi Paulina Wojciechowska-Kusak, która tworzy z pasją i dystansem do świata.",
+    "imageUrl": "/artists/kubkimamy.svg",
+    "imageAlt": "Logo Kubki Mamy",
+    "tags": ["ceramika", "humor", "rękodzieło"]
+  },
+  {
+    "name": "\"Studio Komar\" Mariusz Kozaczka",
+    "description": "J3-Studio Komar to autorska pracownia Mariusza Kozaczki – fotografika, grafika i ceramika, ukryta w jurajskim lesie między Pustynią Błędowską a zamkiem Ogrodzieniec. Po latach pracy w świecie druku i fotografii, artysta zwrócił się ku naturalnym materiałom, tworząc unikatowe rzeźby i formy z gliny, drewna i metalu. Każdy obiekt to ślad jego twórczej drogi, łączącej sztukę cyfrową z rękodziełem i naturą.",
+    "imageUrl": "/artists/komar.jpg",
+    "imageAlt": "Logo Studio Komar",
+    "tags": ["rzeźba", "ceramika", "natura"]
+  },
+  {
+    "name": "Studio ceramiki Efallo.ceramic",
+    "description": "Efallo.Ceramic to pracownia, w której powstaje ręcznie robiona ceramika inspirowana naturą – od unikatowych naczyń, przez dekoracje ścienne, aż po biżuterię. Każdy przedmiot to połączenie estetyki i organicznych form.",
+    "imageUrl": "/artists/effalo.svg",
+    "imageAlt": "Logo Efallo.ceramic",
+    "tags": ["ceramika", "natura", "sztuka użytkowa"]
+  },
+  {
+    "name": "Juli & Jewelry",
+    "description": "To miejsce, gdzie pasja spotyka się z intuicją – biżuteria tworzona z naturalnych kamieni, szkła weneckiego i kryształowych koralików, z myślą o kobietach 30+, które cenią styl i emocje. Każdy projekt to opowieść, która podkreśla nastrój i dodaje pewności siebie na co dzień. Powstaje z potrzeby tworzenia czegoś więcej niż ozdoby – z serca dla serca.",
+    "imageUrl": "/artists/juli.svg",
+    "imageAlt": "Logo Juli & Jewelry",
+    "tags": ["biżuteria", "kobiecość", "kamienie"]
+  },
+  {
+    "name": "Pracownia Ceramiczna Czarka",
+    "description": "Pracownia Ceramiczna Czarka to miejsce, gdzie natura inspiruje unikalną, ręcznie wykonaną ceramikę użytkową i ozdobną. Tworzone tu przedmioty łączą autorskie pomysły z pięknem przyrody, a warsztaty ceramiczne pozwalają każdemu odkryć radość tworzenia. Dodatkowo pracownia oferuje profesjonalny wypał ceramicznych dzieł w specjalistycznym piecu.",
+    "imageUrl": "",
+    "imageAlt": "Logo Pracowni Ceramicznej Czarka",
+    "tags": ["ceramika", "przyroda", "warsztaty"]
+  },
+  {
+    "name": "Bako-Biżuteria",
+    "description": "Bako-Biżuteria to autorska pracownia, gdzie powstają unikatowe projekty z kamieni naturalnych, inspirowane spontanicznymi myślami i twórczym eksperymentem. Każda sztuka to efekt pasji, odrobiny szczęścia i wielu prób, które tworzą niepowtarzalny charakter biżuterii. To miejsce, gdzie kreatywność łączy się z naturą i osobistym podejściem.",
+    "imageUrl": "/artists/bako.svg",
+    "imageAlt": "Logo Bako-Biżuteria",
+    "tags": ["biżuteria", "kamienie", "autorska"]
+  },
+  {
+    "name": "Sobieraj Chocolate",
+    "description": "Sobieraj Chocolate to kameralna manufaktura, gdzie każda tabliczka czekolady powstaje ręcznie, z pasją i dbałością o detale. To połączenie smaku, estetyki i naturalnych składników, które zachwyca nie tylko podniebienie, ale i oko. Tworzona z sercem, dla tych, którzy doceniają słodkości z duszą, a nie masową produkcję.",
+    "imageUrl": "/artists/sobieraj.svg",
+    "imageAlt": "Logo Sobieraj Chocolate",
+    "tags": ["czekolada", "rękodzieło", "słodycze"]
+  },
+  {
+    "name": "Cuda Mamy",
+    "description": "Cuda Mamy to pracownia pełna pasji, gdzie florystyka ślubna i dekoracyjna łączy się z rękodziełem – makramami, szyciem ubrań i drewnianymi domkami. Twórczyni z radością dzieli się swoją wiedzą na warsztatach dla dzieci i dorosłych, inspirując do odkrywania własnej kreatywności. To miejsce, gdzie każdy projekt powstaje z sercem i zaangażowaniem.",
+    "imageUrl": "/artists/cudamamy.svg",
+    "imageAlt": "Logo pracowni Cuda Mamy",
+    "tags": ["florystyka", "makrama", "warsztaty"]
+  },
+  {
+    "name": "Kolektyw Studio",
+    "description": "Kolektyw Studio to katowicka manufaktura kulinarna łącząca piekarnię rzemieślniczą, naturalne przetwory i catering okolicznościowy. Założona przez zespół pasjonatów i profesjonalistów gastronomii, oferuje też szkolenia z szefem Marcinem Czubakiem. To miejsce, gdzie pasja do jedzenia idzie w parze z jakością i kreatywnością, działając lokalnie i poza granicami Śląska.",
+    "imageUrl": "/artists/kolektyw.jpg",
+    "imageAlt": "Logo Kolektyw Studio",
+    "tags": ["kulinaria", "rękodzieło", "edukacja"]
+  },
+  {
+    "name": "flowless",
+    "description": "Flowless to marka, która ręcznie tworzy unikalne kompozycje z żywego mchu, wprowadzając do wnętrz naturalną harmonię i spokój. Każde dzieło to mała forma sztuki, która ożywia przestrzeń i dodaje jej wyjątkowego klimatu. To połączenie rzemiosła z pięknem przyrody, idealne do domów i miejsc publicznych.",
+    "imageUrl": "/artists/flowless.jpeg",
+    "imageAlt": "Logo marki Flowless",
+    "tags": ["natura", "design", "mech"]
+  },
+  {
+    "name": "Szkoła Języków Azjatyckich MOLIHUA",
+    "description": "Szkoła Języków Azjatyckich MOLIHUA to przestrzeń, gdzie nauka języków japońskiego, chińskiego i koreańskiego łączy się z poznawaniem kultury i nawiązywaniem wyjątkowych relacji. Stawiając na profesjonalizm i indywidualne podejście, szkoła oferuje także warsztaty i wycieczki, które wzbogacają doświadczenie nauki. To idealne miejsce dla osób szukających wyzwań i pasji w poznawaniu Azji.",
+    "imageUrl": "/artists/molihua.png",
+    "imageAlt": "Logo Szkoły Języków Azjatyckich MOLIHUA",
+    "tags": ["języki", "Azja", "edukacja"]
+  },
+  {
+    "name": "Warsztatownia Na Dłużej",
+    "description": "",
+    "imageUrl": "",
+    "imageAlt": "Logo Warsztatowni Na Dłużej",
+    "tags": ["warsztaty", "dzieci", "rękodzieło"]
+  },
+  {
+    "name": "F.H.U.P \"COŚ ŁADNEGO\" Maria Żaczek",
+    "description": "",
+    "imageUrl": "",
+    "imageAlt": "Logo F.H.U.P Coś Ładnego",
+    "tags": ["dekoracje", "święta", "rękodzieło"]
+  },
+  {
+    "name": "PotPotStudio",
+    "description": "",
+    "imageUrl": "",
+    "imageAlt": "Logo PotPotStudio",
+    "tags": ["ceramika", "design", "dom"]
+  },
+  {
+    "name": "DS Ceramika",
+    "description": "",
+    "imageUrl": "/artists/ds.png",
+    "imageAlt": "Logo DS Ceramika",
+    "tags": ["ceramika", "użytkowa", "rękodzieło"]
+  }
+]

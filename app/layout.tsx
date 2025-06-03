@@ -9,8 +9,12 @@ const Now = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Manuart Festival",
-  description: "Festiwal w stylu handmade",
+  title: {
+    default: "Manuart Festiwal",
+    template: "%s - Manuart Festiwal",
+  },
+
+  description: "Katowicki festiwal w stylu handmade dla fanów rękodzieła",
 };
 
 export default function RootLayout({
