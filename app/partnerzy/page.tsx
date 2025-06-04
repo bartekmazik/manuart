@@ -30,7 +30,7 @@ function Partner({
           src={`${imageUrl}`}
           fill
           alt={`${imageAlt}`}
-          className=" object-cover"
+          className=" object-fit"
         />
       </div>
       <div className="h-1/2">
@@ -55,7 +55,7 @@ async function PartnersPage() {
         Partnerzy wydarzenia
       </h1>
       {/*partners*/}
-      <div className="w-full h-full bg-primary p-6  gap-4 rounded-xl grid items-stretch  grid-cols-2 place-items-center grid-rows-3 sm:grid-cols-4 sm:grid-rows-2">
+      <div className="w-full h-full bg-primary p-6  gap-4 rounded-xl flex flex-col sm:grid items-stretch  place-items-center  sm:grid-cols-4 sm:grid-rows-2">
         {data.map((partner, index) => (
           <Partner
             name={partner.name}

@@ -33,9 +33,11 @@ const Artist = ({
 }: ArtistType) => {
   return (
     <div className="relative bg-background sm:h-96 w-full  rounded-4xl p-4 flex flex-col sm:flex-row gap-4">
-      <div className="relative shadow-sm overflow-hidden w-full aspect-square sm:aspect-auto sm:w-1/3 h-1/3 sm:h-full bg-white rounded-3xl">
-        <Image src={`${imageUrl}`} fill alt={`${imageAlt}`} />
-      </div>
+      {imageUrl !== "" && (
+        <div className="relative shadow-sm overflow-hidden w-full aspect-square sm:aspect-auto sm:w-1/3 h-1/3 sm:h-full bg-white rounded-3xl">
+          <Image src={`${imageUrl}`} fill alt={`${imageAlt}`} />
+        </div>
+      )}
       <div className="w-full sm:w-2/3 flex flex-col justify-between text-primary gap-4 sm:gap-2">
         <div>
           <h2 className="text-xl sm:text-3xl  font-bold mb-4 sm:mb-2">
@@ -59,8 +61,8 @@ async function Artists() {
   const file = await fs.readFile(process.cwd() + "/app/artists.json", "utf8");
   const data: ArtistType[] = JSON.parse(file);
   return (
-    <section className="flex flex-col gap-6">
-      <h1 className={`text-5xl ${Gliker.className} text-background pt-12`}>
+    <section className="flex flex-col gap-6 py-12">
+      <h1 className={`text-5xl ${Gliker.className} text-background `}>
         Wystawcy
       </h1>
       <p className="text-lg text-background">

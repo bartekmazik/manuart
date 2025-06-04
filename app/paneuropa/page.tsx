@@ -3,7 +3,7 @@ import { Gliker } from "../fonts/gliker";
 import Image from "next/image";
 import Link from "next/link";
 import { Globe } from "lucide-react";
-import Organisators from "../components/Organisators";
+import Organisators from "./Organisators";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -22,7 +22,7 @@ const AboutUsPage = () => {
       {/* map image */}
       <div className="relative w-full h-72 sm:h-96 rounded-3xl overflow-hidden shadow-md">
         <Image
-          src="/map.jpg"
+          src="/paneuropa/paneuropa.jpeg"
           alt="Mapa PANEUROPA"
           fill
           className="object-cover"

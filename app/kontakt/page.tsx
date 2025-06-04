@@ -13,27 +13,29 @@ export const metadata: Metadata = {
 
 const ContactPerson = () => {
   return (
-    <div className="w-full sm:w-1/3 p-4 sm:p-6 rounded-3xl shadow-xl flex flex-col items-center gap-4 bg-background font-bold text-primary transition-all duration-300">
-      <div className="relative w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden shadow-lg">
+    <div className="w-full sm:w-2/3 p-4 sm:p-6 rounded-3xl shadow-xl flex flex-col sm:flex-row justify-between items-start gap-4 bg-background font-bold text-primary transition-all duration-300">
+      <div className="flex flex-col gap-4">
+        <h2 className="text-xl sm:text-2xl font-bold text-center">
+          Julia Ciemięga - Koordynatorka główna projektu
+        </h2>
+        <div className="flex items-center gap-2 text-lg sm:text-xl font-normal">
+          <Phone className="text-primary" />
+          <p>+48 572 465 803</p>
+        </div>
+        <div className="flex items-center gap-2 text-lg sm:text-xl font-normal">
+          <Mail className="text-primary" />
+          <Link href="mailto:juliaciemiega@gmail.com">
+            juliaciemiega@gmail.com
+          </Link>
+        </div>
+      </div>
+      <div className="relative w-full h-1/3 sm:w-1/3 aspect-square sm:h-full rounded-2xl overflow-hidden shadow-lg">
         <Image
-          src="/steve.jpg"
+          src="/organisators/julia.png"
           fill
           alt="contactperson"
           className="object-cover"
         />
-      </div>
-      <h2 className="text-xl sm:text-2xl font-bold text-center">
-        Julia Ciemięga
-      </h2>
-      <div className="flex items-center gap-2 text-base font-normal">
-        <Phone className="text-primary" />
-        <p>+48 579 814 481</p>
-      </div>
-      <div className="flex items-center gap-2 text-base font-normal">
-        <Mail className="text-primary" />
-        <Link href="mailto:juliaciemiega@gmail.com">
-          juliaciemiega@gmail.com
-        </Link>
       </div>
     </div>
   );

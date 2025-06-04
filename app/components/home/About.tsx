@@ -8,7 +8,7 @@ export default function About() {
   return (
     <AnimatePresence>
       <motion.section
-        className="h-screen overflow-hidden  flex flex-col sm:flex-row items-start justify-start py-16"
+        className="min-h-screen overflow-hidden  flex flex-col sm:flex-row items-start justify-start py-16"
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
