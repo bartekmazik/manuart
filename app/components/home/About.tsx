@@ -18,7 +18,7 @@ export default function About() {
           <h2
             className={`${Gliker.className} text-background text-3xl sm:text-5xl `}
           >
-            Kazdy przedmiot to opowiesc
+            Każdy przedmiot to opowieść
           </h2>
           <div className="flex flex-col items-start justify-center w-full sm:w-5/6  gap-8">
             <p className="bg-background text-sm sm:text-base  p-4 rounded-xl  text-primarydark shadow-md hover:shadow-lg transition">

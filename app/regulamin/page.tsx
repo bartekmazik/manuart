@@ -14,8 +14,8 @@ const Regulations = () => {
       >
         Regulamin wydarzenia
       </h1>
-      <div className="relative w-full min-h-screen bg-background rounded-4xl p-6 flex flex-col">
-        <div className="bg-white shadow-md text-primary flex-1 rounded-2xl p-4 text-sm sm:text-lg">
+      <div className="relative w-full min-h-screen bg-background rounded-4xl p-3 sm:p-6 flex flex-col">
+        <div className="bg-white shadow-md text-primary flex-1 rounded-3xl sm:rounded-2xl p-4 text-sm sm:text-lg">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and

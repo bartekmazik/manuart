@@ -86,7 +86,7 @@ export default function Hero() {
             className={`text-2xl sm:text-3xl ${Gliker.className} text-secondary
         }`}
           >
-            Bądź na bieząco
+            Bądź na bieżąco
           </h2>
           <form
             onSubmit={handleSubmit(onSubmit)}

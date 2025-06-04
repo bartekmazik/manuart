@@ -2,19 +2,12 @@ import React from "react";
 import { Gliker } from "../fonts/gliker";
 import { Metadata } from "next";
 import Image from "next/image";
+import { PartnerType } from "../utils/partners";
 import { promises as fs } from "fs";
 
 export const metadata: Metadata = {
   title: "Partnerzy",
 };
-
-interface PartnerType {
-  name: string;
-  description: string;
-  imageUrl: string;
-  imageAlt: string;
-  isStrategicPartner: boolean;
-}
 
 function Partner({
   name,
@@ -33,11 +26,15 @@ function Partner({
           className=" object-fit"
         />
       </div>
-      <div className="h-1/2">
+      <div className="h-1/2 flex flex-col gap-2 overflow-hidden">
         <h2 className="font-extrabold text-lg sm:text-xl text-primary text-center">
           {name}
         </h2>
-
+        {isStrategicPartner && (
+          <p className="bg-primary rounded-lg p-2 text-center">
+            PARTNER STRATEGICZNY
+          </p>
+        )}
         <p className=" text-sm text-gray-800  w-full p-3 rounded-xl">
           {description}
         </p>
@@ -49,6 +46,7 @@ function Partner({
 async function PartnersPage() {
   const file = await fs.readFile(process.cwd() + "/app/partners.json", "utf8");
   const data: PartnerType[] = JSON.parse(file);
+
   return (
     <div className=" flex flex-col pt-12 justify-center sm:justify-start items-start gap-12">
       <h1 className={`${Gliker.className} text-5xl text-background`}>

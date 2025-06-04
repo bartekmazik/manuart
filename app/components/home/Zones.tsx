@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { Gliker } from "@/app/fonts/gliker";
 import { AnimatePresence, motion } from "motion/react";

@@ -57,21 +57,25 @@ const AboutUsPage = () => {
         <div className="flex flex-row items-center gap-4 self-center ">
           {[
             {
-              href: "https://facebook.com",
+              href: "https://www.facebook.com/Paneuropa",
               src: "/facebook.svg",
               alt: "Facebook",
             },
             {
-              href: "https://instagram.com",
+              href: "https://www.instagram.com/paneuropa_ue/",
               src: "/instagram.svg",
               alt: "Instagram",
             },
             {
-              href: "https://linkedin.com",
+              href: "https://www.linkedin.com/company/paneuropakatowice",
               src: "/linkedin.svg",
               alt: "LinkedIn",
             },
-            { href: "https://tiktok.com", src: "/tiktok.svg", alt: "TikTok" },
+            {
+              href: "https://www.tiktok.com/@paneuropa_ue",
+              src: "/tiktok.svg",
+              alt: "TikTok",
+            },
           ].map(({ href, src, alt }) => (
             <Link key={alt} href={href} target="_blank">
               <Image

@@ -4,19 +4,26 @@ import Image from "next/image";
 import React from "react";
 import { Gliker } from "@/app/fonts/gliker";
 import { AnimatePresence, motion } from "framer-motion";
+// import { promises as fs } from "fs";
+import { PartnerType } from "@/app/utils/partners";
 
-const sponsors = [
-  "/partners/angelos.svg",
-  "/partners/artstudio.png",
-  "/partners/bonadea.svg",
-  "/partners/bwa.svg",
-  "/partners/cudamamy.svg",
-  "/partners/kolektyw.png",
-  "/partners/molihua.png",
-  "/partners/pasieka.svg",
-];
+// async function getPartners() {
+//   const file = await fs.readFile(process.cwd() + "/app/partners.json", "utf8");
+//   const data: PartnerType[] = JSON.parse(file);
+//   return data;
+// }
 
-export default function Partners() {
+export default function Partners({ data }: { data: PartnerType[] }) {
+  // const [data, setData] = useState<PartnerType[]>([]);
+
+  // useEffect(() => {
+  //   async function fetchData() {
+  //     const partners = await getPartners();
+  //     setData(partners);
+  //   }
+  //   fetchData();
+  // }, []);
+
   return (
     <AnimatePresence>
       <motion.section
@@ -30,26 +37,36 @@ export default function Partners() {
           <h1
             className={`${Gliker.className} font-bold text-3xl sm:text-5xl  text-primary sm:mb-8`}
           >
-            PARTNERZY
+            PARTNERZY STRATEGICZNI
           </h1>
-          <div className="w-full h-full bg-white p-6 rounded-xl grid items-stretch  grid-cols-2 place-items-center grid-rows-3 sm:grid-cols-6 sm:grid-rows-2">
-            {sponsors.map((logo, index) => (
-              <div key={index} className="relative w-24 h-24 sm:w-40 sm:h-40  ">
-                <Image src={logo} alt={`sponsor-${index}`} fill />
-              </div>
-            ))}
+          <div className="w-full h-full bg-white p-6 rounded-xl flex flex-col sm:flex-row gap-12 items-center justify-center">
+            {data
+              .filter((partner) => partner.isStrategicPartner === true)
+              .map((partner, index) => (
+                <div
+                  key={index}
+                  className="relative w-48 h-48 sm:w-72 sm:h-72 aspect-square  "
+                >
+                  <Image src={partner.imageUrl} alt={partner.imageAlt} fill />
+                </div>
+              ))}
           </div>
           <h1
             className={`${Gliker.className} font-bold  text-3xl sm:text-5xl  text-primary mb-8`}
           >
             PARTNERZY MEDIALNI
           </h1>
-          <div className="w-full  h-full bg-white p-6 rounded-xl grid  grid-cols-2 place-items-center grid-rows-3 sm:grid-cols-6 sm:grid-rows-2">
-            {sponsors.map((logo, index) => (
-              <div key={index} className="relative w-24 h-24 sm:w-36 sm:h-36  ">
-                <Image src={logo} alt={`sponsor-${index}`} fill />
-              </div>
-            ))}
+          <div className="w-full  h-full bg-white p-6 rounded-xl flex flex-col sm:flex-row items-center justify-center">
+            {data
+              .filter((partner) => partner.isStrategicPartner === false)
+              .map((partner, index) => (
+                <div
+                  key={index}
+                  className="relative w-48 h-48 sm:w-1/3 sm:h-full aspect-square  "
+                >
+                  <Image src={partner.imageUrl} alt={partner.imageAlt} fill />
+                </div>
+              ))}
           </div>
         </div>
       </motion.section>

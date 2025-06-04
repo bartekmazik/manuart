@@ -14,15 +14,15 @@ const Footer = () => {
   return (
     <footer className="relative  w-full h-[50vh] sm:h-[40vh] rounded-t-4xl overflow-x-visible sm:mt-36 text-backgroundsecondary bg-background ">
       {/* footer content */}
-      <div className="absolute bg-transparent inset-0 px-8 sm:px-16 py-8 sm:py-20 flex flex-col sm:flex-row items-end justify-end sm:justify-between  text-left gap-10 sm:gap-0">
+      <div className="absolute bg-transparent inset-0 px-8 sm:px-16 py-4 sm:py-20 flex flex-col sm:flex-row items-end justify-end sm:justify-between  text-left gap-10 sm:gap-0">
         {/*left column*/}
-        <div className="flex flex-col items-start gap-4 w-full">
+        <div className="flex flex-col items-center sm:items-start gap-4 w-full">
           <h2
-            className={`${Gliker.className} text-primary text-lg sm:text-4xl font-bold`}
+            className={`${Gliker.className} text-primary text-xl sm:text-4xl font-bold`}
           >
             ManuArt Festiwal
           </h2>
-          <div className="flex flex-col gap-2 text-primary text-base sm:text-lg font-medium">
+          <div className="flex flex-col items-center sm:items-start gap-2 text-primary text-base sm:text-lg font-medium">
             <Link
               href="/wydarzenie"
               className="hover:text-primarydark transition-colors"
@@ -50,29 +50,38 @@ const Footer = () => {
           </div>
         </div>
         {/* right column */}
-        <div className="w-full flex flex-col justify-center items-start sm:items-center sm:w-1/3 gap-4">
-          <p className={`${Gliker.className} text-primary text-lg sm:text-2xl`}>
+        <div className="w-full h-full flex flex-col justify-center items-center  sm:w-1/3 gap-4">
+          <div className="hidden sm:block relative w-full h-full self-start ">
+            <Image
+              src="/paneuropa/paneuropalogo.svg"
+              alt="logo paneuropy"
+              fill
+            />
+          </div>
+          <p
+            className={`${Gliker.className} text-primary  text-lg sm:text-2xl`}
+          >
             ZAOBSERWUJ NAS
           </p>
           <div className="flex flex-row justify-center items-center gap-4">
             {[
               {
-                href: "https://facebook.com",
+                href: "https://www.facebook.com/Paneuropa",
                 src: "/facebook.svg",
                 alt: "Facebook",
               },
               {
-                href: "https://instagram.com",
+                href: "https://www.instagram.com/paneuropa_ue/",
                 src: "/instagram.svg",
                 alt: "Instagram",
               },
               {
-                href: "https://linkedin.com",
+                href: "https://www.linkedin.com/company/paneuropakatowice",
                 src: "/linkedin.svg",
                 alt: "LinkedIn",
               },
               {
-                href: "https://tiktok.com",
+                href: "https://www.tiktok.com/@paneuropa_ue",
                 src: "/tiktok.svg",
                 alt: "TikTok",
               },
