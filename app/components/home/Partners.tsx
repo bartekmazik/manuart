@@ -60,7 +60,7 @@ export default function Partners({ data }: { data: PartnerType[] }) {
           <h1
             className={`${Gliker.className} font-bold  text-3xl sm:text-5xl  text-primary mb-8`}
           >
-            PARTNERZY MEDIALNI
+            PARTNERZY WYDARZENIA
           </h1>
           <div className="w-full  h-full bg-white p-6 rounded-xl flex flex-col sm:flex-row items-center justify-center">
             {data
