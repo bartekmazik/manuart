@@ -4,6 +4,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import { PartnerType } from "../utils/partners";
 import { promises as fs } from "fs";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Partnerzy",
@@ -31,6 +32,16 @@ function Partner({
         <h2 className="font-extrabold text-lg sm:text-xl text-primary text-center">
           {name}
         </h2>
+        {name === "Angelos" && (
+          <Link
+            href="https://angelos.pl/"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="bg-primary rounded-lg p-2 text-center cursor-pointer hover:bg-primarydark"
+          >
+            STRONA INTERNETOWA
+          </Link>
+        )}
         {isStrategicPartner && (
           <p className="bg-primary rounded-lg p-2 text-center">
             PARTNER STRATEGICZNY
