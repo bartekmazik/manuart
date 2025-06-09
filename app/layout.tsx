@@ -13,7 +13,6 @@ export const metadata: Metadata = {
     default: "Manuart Festiwal",
     template: "%s - Manuart Festiwal",
   },
-
   description: "Katowicki festiwal w stylu handmade dla fanów rękodzieła",
 };
 

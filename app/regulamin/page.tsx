@@ -1,6 +1,7 @@
 import React from "react";
 import { Gliker } from "../fonts/gliker";
 import { Metadata } from "next";
+import { Button } from "../components/Button";
 
 export const metadata: Metadata = {
   title: "Regulamin",
@@ -14,44 +15,39 @@ const Regulations = () => {
       >
         Regulamin wydarzenia
       </h1>
-      <div className="relative w-full min-h-screen bg-background rounded-4xl p-3 sm:p-6 flex flex-col">
-        <div className="bg-white shadow-md text-primary flex-1 rounded-3xl sm:rounded-2xl p-4 text-sm sm:text-lg">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of
-          the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500s, when an unknown
-          printer took a galley of type and scrambled it to make a type specimen
-          book. It has survived not only five centuries, but also the leap into
-          electronic typesetting, remaining essentially unchanged. It was
-          popularised in the 1960s with the release of Letraset sheets
-          containing Lorem Ipsum passages, and more recently with desktop
-          publishing software like Aldus PageMaker including versions of Lorem
-          Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of
-          the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500s, when an unknown
-          printer took a galley of type and scrambled it to make a type specimen
-          book. It has survived not only five centuries, but also the leap into
-          electronic typesetting, remaining essentially unchanged. It was
-          popularised in the 1960s with the release of Letraset sheets
-          containing Lorem Ipsum passages, and more recently with desktop
-          publishing software like Aldus PageMaker including versions of Lorem
-          Ipsum.
-        </div>
+
+      <div className="flex flex-col gap-8 p-4  rounded-3xl w-full">
+        <Button
+          href="https://drive.google.com/file/d/16kLsGwARIqPA7t0teL9K-YDpanlMUV0d/view?usp=drive_link"
+          text="Regulamin dla Uczestników"
+          variant="light"
+        />
+        <Button
+          href="https://drive.google.com/file/d/1EYp0DYa8_SCgwwNfmpwYc7oCXxiqGRCP/view?usp=drive_link"
+          text="Regulamin dla Wystawców"
+          variant="light"
+        />
+        <Button
+          href="https://drive.google.com/file/d/1He0t-XIuogqPejQejuAxNGyZ3evAjY0a/view?usp=drive_link"
+          text="Klauzula informacyjna administratora danych osobowych"
+          variant="light"
+        />
+        <Button
+          href="https://drive.google.com/file/d/107Q6yprKG2YqzASAHf_0weR16L84w0eR/view?usp=drive_link"
+          text="Pisemna zgoda - oświadczenie rodzica/opiekuna prawnego uczestnika powyżej 13 roku życia"
+          variant="light"
+        />
+        <Button
+          href="https://drive.google.com/file/d/1ioXrB9DvPxqouUp0hlB3hmaHJSHMRJVV/view?usp=drive_link"
+          text="Pisemna zgoda - oświadczenie rodzica/opiekuna prawnego uczestnika poniżej 13 roku życia"
+          variant="light"
+        />
+
+        <Button
+          href="https://drive.google.com/file/d/107Q6yprKG2YqzASAHf_0weR16L84w0eR/view?usp=drive_link"
+          text="Pisemna zgoda - oświadczenie rodzica/opiekuna prawnego uczestnika powyżej 16 roku życia"
+          variant="light"
+        />
       </div>
     </section>
   );

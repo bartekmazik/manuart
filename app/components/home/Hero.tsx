@@ -3,8 +3,8 @@
 import React from "react";
 import { Gliker } from "../../fonts/gliker";
 import { CalendarDays, Clock, MapPin, Send } from "lucide-react";
-import { Button } from "../Button";
 import { motion } from "motion/react";
+import Image from "next/image";
 import * as z from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -55,7 +55,7 @@ export default function Hero() {
     >
       <div className="relative w-full bg-background h-[95%] sm:h-[90%] rounded-4xl flex flex-row justify-between shadow-md hover:shadow-lg transition">
         <Navbar />
-        <div className="mt-20 sm:mt-28 p-6 lg:w-1/2 w-full gap-4 flex flex-col items-start justify-start">
+        <div className="mt-20 sm:mt-28 pt-8 px-6 sm:px-14 lg:w-1/2 w-full gap-6 flex flex-col items-start justify-start">
           <h1
             className={`font-bold ${Gliker.className} text-3xl sm:text-5xl text-primary`}
           >
@@ -81,7 +81,6 @@ export default function Hero() {
               Galeria Szyb Wilson, Katowice
             </p>
           </div>
-          <Button text="MAPA WYDARZENIA" href="/wydarzenie" variant="green" />
           <h2
             className={`text-2xl sm:text-3xl ${Gliker.className} text-secondary
         }`}
@@ -113,9 +112,16 @@ export default function Hero() {
             <p className="text-red-500 text-sm ml-2">{errors.email.message}</p>
           )}
         </div>
-        {/* <div className="hidden lg:block w-1/2 relative ">
-          <Image src="/heroguy.png" fill={true} alt="guy" objectFit="contain" />
-        </div> */}
+        <div className="hidden lg:block w-2/5 relative h-full">
+          <Image
+            src="/heroguy.png"
+            alt="guy"
+            fill
+            className="object-contain"
+            sizes="(min-width: 1024px) 40vw"
+            priority
+          />
+        </div>
       </div>
     </motion.div>
   );

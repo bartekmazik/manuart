@@ -45,9 +45,15 @@ export default function Partners({ data }: { data: PartnerType[] }) {
               .map((partner, index) => (
                 <div
                   key={index}
-                  className="relative w-48 h-48 sm:w-72 sm:h-72 aspect-square  "
+                  className="relative w-48 h-48 sm:w-48 sm:h-48 flex items-center justify-center bg-white p-4 rounded-xl"
                 >
-                  <Image src={partner.imageUrl} alt={partner.imageAlt} fill />
+                  <Image
+                    src={partner.imageUrl}
+                    alt={partner.imageAlt}
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 640px) 100px, 192px"
+                  />
                 </div>
               ))}
           </div>
@@ -62,9 +68,15 @@ export default function Partners({ data }: { data: PartnerType[] }) {
               .map((partner, index) => (
                 <div
                   key={index}
-                  className="relative w-48 h-48 sm:w-1/3 sm:h-full aspect-square  "
+                  className="relative w-48 h-48 sm:w-48 sm:h-48 flex items-center justify-center bg-white p-4 rounded-xl"
                 >
-                  <Image src={partner.imageUrl} alt={partner.imageAlt} fill />
+                  <Image
+                    src={partner.imageUrl}
+                    alt={partner.imageAlt}
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 640px) 100px, 192px"
+                  />
                 </div>
               ))}
           </div>

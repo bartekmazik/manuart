@@ -34,8 +34,14 @@ const Artist = ({
   return (
     <div className="relative bg-background sm:h-96 w-full  rounded-4xl p-4 flex flex-col sm:flex-row gap-4">
       {imageUrl !== "" && (
-        <div className="relative shadow-sm overflow-hidden w-full aspect-square sm:aspect-auto sm:w-1/3 h-1/3 sm:h-full bg-white rounded-3xl">
-          <Image src={`${imageUrl}`} fill alt={`${imageAlt}`} />
+        <div className="relative flex items-center justify-center shadow-sm overflow-hidden w-full aspect-square sm:w-1/3 sm:h-full bg-white rounded-3xl p-4">
+          <Image
+            src={imageUrl}
+            alt={imageAlt}
+            fill
+            className="object-contain"
+            sizes="(max-width: 640px) 100vw, 33vw"
+          />
         </div>
       )}
       <div className="w-full sm:w-2/3 flex flex-col justify-between text-primary gap-4 sm:gap-2">
@@ -46,11 +52,14 @@ const Artist = ({
           <p className="text-sm sm:text-base">{description}</p>
         </div>
         <div className="flex flex-row flex-wrap  items-center gap-2 ">
-          Tematyka:
-          {tags &&
-            tags.map((text, i) => {
-              return <Tag text={text} key={i} />;
-            })}
+          {tags.length > 0 && (
+            <>
+              <span>Tematyka:</span>
+              {tags.map((text, i) => {
+                return <Tag text={text} key={i} />;
+              })}
+            </>
+          )}
         </div>
       </div>
     </div>

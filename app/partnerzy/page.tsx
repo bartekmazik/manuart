@@ -18,12 +18,13 @@ function Partner({
 }: PartnerType) {
   return (
     <div className="flex min-h-[70vh] flex-col w-full items-center gap-3 bg-background p-4 rounded-2xl shadow-md hover:shadow-lg transition">
-      <div className="relative rounded-2xl h-1/2 shadow-md overflow-hidden  aspect-square w-full  border-4 bg-white">
+      <div className="relative flex items-center justify-center h-64 w-full bg-white rounded-2xl shadow-md overflow-hidden border-4 p-4">
         <Image
-          src={`${imageUrl}`}
+          src={imageUrl}
+          alt={imageAlt}
           fill
-          alt={`${imageAlt}`}
-          className=" object-fit"
+          className="object-contain"
+          sizes="(max-width: 768px) 100vw, 25vw"
         />
       </div>
       <div className="h-1/2 flex flex-col gap-2 overflow-hidden">

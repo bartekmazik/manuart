@@ -43,9 +43,6 @@ function Dropdown({ onClose }: { onClose: () => void }) {
       >
         x
       </button>
-      <Link href="/wydarzenie" onClick={onClose}>
-        Mapa wydarzenia
-      </Link>
       <Link href="/warsztaty" onClick={onClose}>
         Warsztaty
       </Link>
@@ -83,13 +80,6 @@ const Navbar = () => {
           <Image src="/logo.png" alt="logo" fill />
         </Link>
         <div className="hidden sm:flex flex-row items-center gap-8 justify-between font-bold  text-xl text-primary">
-          <Link
-            href={"/wydarzenie"}
-            className="hover:text-primarydark transition-colors duration-500"
-          >
-            Mapa wydarzenia
-          </Link>
-
           <Link
             href={"/wystawcy"}
             className="hover:text-primarydark transition-colors duration-500"

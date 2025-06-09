@@ -23,11 +23,8 @@ const Footer = () => {
             ManuArt Festiwal
           </h2>
           <div className="flex flex-col items-center sm:items-start gap-2 text-primary text-base sm:text-lg font-medium">
-            <Link
-              href="/wydarzenie"
-              className="hover:text-primarydark transition-colors"
-            >
-              Wydarzenie
+            <Link href="/" className="hover:text-primarydark transition-colors">
+              Strona główna
             </Link>
             <Link
               href="/about"
