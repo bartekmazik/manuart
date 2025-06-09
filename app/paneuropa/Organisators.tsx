@@ -64,7 +64,7 @@ const Organisators = () => {
         <Organisator
           name="Emilia"
           role="Koordynatorka Harmonogramu i Logistyki"
-          imageUrl="/organisators/emilia.jpg"
+          imageUrl="/organisators/emilia.jpeg"
           imageAlt="emilia"
           description="Prawdziwa pasjonatka rękodzieła i lokalnej twórczości. Czerpie radość z łączenia pasji z organizacją wydarzeń, a jej zaangażowanie sprawia, że wszystko przebiega zgodnie z planem. Dzięki niej Festiwal działa jak dobrze naoliwiony mechanizm!"
         />
