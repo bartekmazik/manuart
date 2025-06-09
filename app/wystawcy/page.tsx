@@ -41,7 +41,6 @@ const Artist = ({
             fill
             className="object-contain"
             sizes="(max-width: 640px) 100vw, 33vw"
-            loading="eager"
           />
         </div>
       )}
