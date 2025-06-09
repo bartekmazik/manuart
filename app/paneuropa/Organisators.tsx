@@ -23,6 +23,7 @@ function Organisator({
           src={`${imageUrl}`}
           fill
           alt={`${imageAlt}`}
+          loading="eager"
           className=" object-cover"
         />
       </div>
@@ -70,7 +71,7 @@ const Organisators = () => {
         <Organisator
           name="Kamila"
           role="Koordynatorka Promocji"
-          imageUrl="/organisators/kamila.jpg"
+          imageUrl="/organisators/kamila.jpeg"
           imageAlt="kamila"
           description="Od zawsze pasjonuje się kreatywnymi zajęciami i rękodziełem, które pozwala jej wyrazić siebie. Zaangażowała się w projekt, by podjąć nowe wyzwania i rozwijać się. W wolnym czasie lubi podróże, czytanie, gry komputerowe, koncerty i spotkania z przyjaciółmi.
 "
