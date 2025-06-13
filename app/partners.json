@@ -54,5 +54,12 @@
     "imageUrl": "/partners/cudamamy.svg",
     "imageAlt": "Logo Cuda Mamy",
     "isStrategicPartner": false
+  },
+  {
+    "name": "TVS",
+    "description": "Patronat medialny wydarzenia",
+    "imageUrl": "/partners/tvs.png",
+    "imageAlt": "Logo TVS",
+    "isStrategicPartner": false
   }
 ]

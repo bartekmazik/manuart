@@ -27,7 +27,7 @@ const Footer = () => {
               Strona główna
             </Link>
             <Link
-              href="/about"
+              href="/paneuropa"
               className="hover:text-primarydark transition-colors"
             >
               O nas

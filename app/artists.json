@@ -152,5 +152,69 @@
     "imageUrl": "/artists/ds.png",
     "imageAlt": "Logo DS Ceramika",
     "tags": ["ceramika", "użytkowa", "rękodzieło"]
+  },
+  {
+    "name": "Handmade_by_kristof Krzysztof Niedbala",
+    "description": "",
+    "imageUrl": "/artists/kristof.jpg",
+    "imageAlt": "Logo Handmade_by_kristof",
+    "tags": ["rękodzieło", "handmade", "prezenty", "ozdoby"]
+  },
+  {
+    "name": "J&M Rękodzieło",
+    "description": "",
+    "imageUrl": "/artists/jm.png",
+    "imageAlt": "Logo J&M Rękodzieło",
+    "tags": [
+      "rękodzieło",
+      "szydełkowanie",
+      "filc",
+      "biżuteria z żywicy",
+      "makrama",
+      "dekoracje"
+    ]
+  },
+  {
+    "name": "Only Flasks",
+    "description": "",
+    "imageUrl": "/artists/onlyflasks.svg",
+    "imageAlt": "Logo OnlyFlasks",
+    "tags": ["rękodzieło", "flaski", "prezenty", "stal nierdzewna", "korki"]
+  },
+  {
+    "name": "Ion Art",
+    "description": "",
+    "imageUrl": "/artists/ion.jpg",
+    "imageAlt": "Logo Ion Art",
+    "tags": [
+      "neon",
+      "instalacje",
+      "rzeźba",
+      "metaloplastyka",
+      "światło",
+      "signage",
+      "malarstwo"
+    ]
+  },
+  {
+    "name": "Ale.poplatane",
+    "description": "",
+    "imageUrl": "",
+    "imageAlt": "",
+    "tags": ["haft", "rękodzieło", "biżuteria", "haft ręczny"]
+  },
+  {
+    "name": "Kokonik Handmade",
+    "description": "",
+    "imageUrl": "",
+    "imageAlt": "",
+    "tags": [
+      "biżuteria",
+      "kamienie naturalne",
+      "bursztyn",
+      "kocyki",
+      "tekstylia",
+      "handmade"
+    ]
   }
 ]
