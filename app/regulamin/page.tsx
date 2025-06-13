@@ -44,7 +44,7 @@ const Regulations = () => {
         />
 
         <Button
-          href="https://drive.google.com/file/d/107Q6yprKG2YqzASAHf_0weR16L84w0eR/view?usp=drive_link"
+          href="https://drive.google.com/file/d/1YzPc48bfYqAEzEeuC_AB2pNn5gGRsBzE/view?usp=drive_link"
           text="Pisemna zgoda - oświadczenie rodzica/opiekuna prawnego uczestnika powyżej 16 roku życia"
           variant="light"
         />
